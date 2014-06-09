@@ -1,0 +1,37 @@
+<div ng-controller="PlacesCtrl" class="page-wrapper">
+    <slick class="" infinite=false arrows=false>
+        <div ng-repeat="slide in slides" active="slide.active">
+            <div class="carousel-caption" ng-if="slide.caption">
+                <h3>{{slide.caption}}</h3>
+            </div>
+
+            <div class="jumbotron" ng-if="slide.title">
+                <h1>BRAVE
+                    <br>NEW
+                    <br>WORK</h1>
+            </div>
+
+
+            <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl">
+              <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+              <button type="button" class="btn btn-play btn-lg" ng-model="playing" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+                <span class="glyphicon glyphicon-play" ng-hide="playing"></span>
+                <span class="glyphicon glyphicon-pause" ng-show="playing"></span>
+              </button>
+            </div>
+
+
+            <!-- <audio ng-if="slide.audio" src="audio/01-stoberholz.m4a"> -->
+
+            <!-- </audio> -->
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <!--<bnw-video-player ng-if="slide.video" id="video-player-{{$index}}"></bnw-video-player>-->
+            <div class="video-wrapper" fit-vids ng-if="slide.video">
+                <iframe id="ytplayer" width="1280" height="800" type="text/html" src="http://www.youtube.com/embed/PFVcfyqm9_Y?modestbranding=1&rel=0&controls=0&autoplay=0&playsinline=1&showinfo=0&origin=http://example.com" frameborder="0" allowfullscreen/>
+            </div>
+        </div>
+    </slick>
+
+
+
+</div>

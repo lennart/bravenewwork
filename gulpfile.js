@@ -12,7 +12,7 @@ var paths = {
   src: 'app',
   dist: 'dist',
   scripts: '*/*.js',
-  fonts: 'fonts/{,*/}*.{svg,woff,eot,ttf}',
+  fonts: 'fonts/{,*/}*.{svg,woff,eot,ttf,m4a}',
   templates: '{,*/}*.tpl.html',
   views: 'views/**/*.html',
   images: 'images/{,*/}*.{jpg,png,svg}',

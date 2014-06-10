@@ -9,14 +9,21 @@ app
         var iframeElementID = iframeElement.id;
         $scope.widget = SC.Widget(iframeElement);
         var btn = $element.find('button');
+        var audio = $element.find('audio')[0];
+
+
 
         $scope.$watch('playing', function(playing) {
             if (playing) {
                 btn.addClass("playing");
-                $scope.widget.play();
+                // audio.addClass("playing");
+                // $scope.widget.play();
+                audio.play();
             } else {
+                // audio.addClass("playing");
                 btn.removeClass("playing");
                 $scope.widget.pause();
+                audio.pause();
             }
         })
 

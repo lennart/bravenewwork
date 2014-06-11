@@ -14,8 +14,8 @@
 
             <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl">
               <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
-              <audio class="hide" controls>
-                <source src="/fonts/01-stoberholz.m4a">
+              <audio>
+                <source src="/audio/01-stoberholz.mp3">
               </audio>
               <button type="button" class="btn btn-play btn-lg" ng-model="playing" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
                 <span class="glyphicon glyphicon-play" ng-hide="playing"></span>

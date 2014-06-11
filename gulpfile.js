@@ -12,7 +12,8 @@ var paths = {
   src: 'app',
   dist: 'dist',
   scripts: '*/*.js',
-  fonts: 'fonts/{,*/}*.{svg,woff,eot,ttf,m4a}',
+  fonts: 'fonts/{,*/}*.{svg,woff,eot,ttf}',
+  audios: 'audio/{,*/}*.{mp3}',
   templates: '{,*/}*.tpl.html',
   views: 'views/**/*.html',
   images: 'images/{,*/}*.{jpg,png,svg}',
@@ -141,6 +142,13 @@ gulp.task('fonts:dist', function() {
     .pipe(gulp.dest(paths.dist + '/fonts'))
 });
 
+// FONTS
+//
+gulp.task('audios:dist', function() {
+  return gulp.src(paths.audios, {cwd: paths.src})
+    .pipe(gulp.dest(paths.dist + '/audios'))
+});
+
 // INDEX
 //
 var htmlmin = require('gulp-htmlmin');
@@ -249,6 +257,6 @@ gulp.task('copy:dist', function() {
 //
 gulp.task('default', ['build']);
 gulp.task('test', ['clean:test', 'jshint', 'karma:unit']);
-gulp.task('build', ['clean:dist', 'views:dist', 'copy:dist', 'fonts:dist']);
+gulp.task('build', ['clean:dist', 'views:dist', 'copy:dist', 'fonts:dist', 'audios:dist']);
 gulp.task('serve', ['clean:tmp', 'bower:src', 'styles:src', 'connect:src', 'watch:src', 'open:src']);
 gulp.task('serve-dist', ['connect:dist', 'open:dist']);

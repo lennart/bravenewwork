@@ -4,6 +4,8 @@ app
     title: "BRAVE<br>NEW<br>WORK"
   },{
     caption: "Kaffee kochen",
+    quote: "Eine Gratwanderung zwischen Elitarismus und Alternativität",
+    scrollDown: true,
     video: "PFVcfyqm9_Y",
     videoStill: "kaffee-kochen.jpg"
   },

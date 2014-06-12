@@ -11,6 +11,18 @@
                     <br>WORK</h1>
             </div>
 
+            <a href="#media-content-{{$index}}" ng-if="slide.quote"  class="col-xs-4 col-xs-offset-4 media-content-link">
+              <blockquote>
+                <p class="lead">
+                  {{slide.quote}}
+                </p>
+
+              </blockquote>
+              <p>
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                </p>
+            </a>
+
 
             <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl">
               <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
@@ -29,7 +41,7 @@
             <!-- </audio> -->
             <img ng-src="{{slide.image}}" style="margin:auto;">
             <!-- <bnw-video-player ng-if="slide.video" id="video-player-{{$index}}"></bnw-video-player> -->
-            <bnw-video-player index="$index" ng-if="slide.video">
+            <bnw-video-player index="$index" ng-if="slide.video" id="media-content-{{$index}}">
 
               <button class="btn-video-play">
                 <img src="/images/kaffee-kochen.jpg">

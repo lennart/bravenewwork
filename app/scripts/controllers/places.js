@@ -18,7 +18,7 @@ app
   $log.info('slides', slides);
 
 
-$scope.onAfterChange = function() {
+  $scope.onAfterChange = function() {
     $log.info('slide changed', $scope.currentIndex);
   }
 });

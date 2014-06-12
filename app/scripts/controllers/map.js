@@ -11,8 +11,11 @@ app
     showKml: true
   }
 
+  $scope.kmlUrl = $location.absUrl() + "/data/01-ausland.kml"
+
+  $log.info('kmlUrl', $scope.kmlUrl);
   $scope.kmlLayerOptions = {
-    url: $location.absUrl() + "/data/01-ausland.kml"
+    url: $scope.kmlUrl
   }
 
   // var kmlUrl = 'http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml';

@@ -285,6 +285,15 @@ gulp.task('copy:images', ['clean:images'], function() {
   gulp.src([, paths.images], {cwd: paths.src})
     .pipe(gulp.dest(paths.dist + '/images'));
 })
+var deploy = require("gulp-gh-pages");
+
+gulp.task('deploy', ['build'],  function() {
+  gulp.src('./dist/**/*')
+    .pipe(deploy({
+      origin: 'github',
+      // branch: 'master'
+    }))
+})
 
 
 // ALIASES

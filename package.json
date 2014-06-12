@@ -44,6 +44,7 @@
     "gulp-watch": "^0.6.4",
     "jshint-stylish": "^0.2.0",
     "through2": "^0.4.1",
-    "wiredep": "^1.4.4"
+    "wiredep": "^1.4.4",
+    "gulp-gh-pages": "^0.3.2"
   }
 }

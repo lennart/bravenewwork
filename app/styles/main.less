@@ -6,7 +6,7 @@
 @jumbotron-bg:                   #000;
 @font-family-base: "Helvetica Neue";
 @headings-font-family:    inherit;
-@headings-font-weight:    100;
+@headings-font-weight:    300;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -16,9 +16,6 @@
 
 @import "../bower_components/bootstrap/less/mixins.less";
 
-h1 {
-  // letter-spacing: 3px;
-}
 
 // Reset
 @import "../bower_components/bootstrap/less/normalize.less";
@@ -79,6 +76,12 @@ a:hover {
   color: #fff;
 }
 
+.spinner {
+  background: url(../images/ajax-loader.gif) no-repeat top left;
+  width: 66px;
+  height: 66px;
+}
+
 // Custom default button
 .btn-default,
 .btn-default:hover,
@@ -89,12 +92,18 @@ a:hover {
   border: 1px solid #fff;
 }
 
-.btn-play {
-  font-size: 50px;
-  margin: 50px;
-  padding: 20px 35px;
-  color: #aaa;
-  background-color: transparent;
+.btn-video-play {
+  padding: 0;
+  background: none;
+  border: none;
+
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+}
+
+.btn-video-play, .btn-play {
   &.active:focus, &:active:focus, &:focus {
     outline: none;
     color: #999;
@@ -107,6 +116,30 @@ a:hover {
   &:hover {
     color: #777;
   }
+}
+
+.video-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  line-height: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  z-index: 1;
+}
+
+.btn-play {
+  margin: 50px;
+  padding: 20px 35px;
+}
+
+.btn-play, .video-icon {
+  font-size: 50px;
+
+  color: rgba(255,255,255, 0.6);
+  background-color: transparent;
 }
 
 //
@@ -196,6 +229,12 @@ body {
     //     margin-left: -20px;
     //     margin-right: -20px;
     // }
+}
+
+
+h1 {
+  // letter-spacing: 3px;
+  font-weight: 100;
 }
 
 body {
@@ -334,3 +373,5 @@ iframe {
     width: 700px;
   }
 }
+
+

@@ -28,10 +28,30 @@
 
             <!-- </audio> -->
             <img ng-src="{{slide.image}}" style="margin:auto;">
-            <!--<bnw-video-player ng-if="slide.video" id="video-player-{{$index}}"></bnw-video-player>-->
-            <div class="video-wrapper" fit-vids ng-if="slide.video">
-                <iframe id="ytplayer" width="1280" height="800" type="text/html" src="http://www.youtube.com/embed/PFVcfyqm9_Y?modestbranding=1&rel=0&controls=0&autoplay=0&playsinline=1&showinfo=0&origin=http://example.com" frameborder="0" allowfullscreen/>
-            </div>
+            <!-- <bnw-video-player ng-if="slide.video" id="video-player-{{$index}}"></bnw-video-player> -->
+            <bnw-video-player index="$index" ng-if="slide.video">
+
+              <button class="btn-video-play">
+                <img src="/images/kaffee-kochen.jpg">
+                <div class="video-icon">
+                  <span class="glyphicon glyphicon-facetime-video" ng-hide="playing || loading"></span>
+                  <span class="glyphicon glyphicon-pause" ng-show="playing"></span>
+                  <div class="spinner hide"></div>
+                </div>
+              </button>
+
+              <div fit-vids custom-selector="div.video-player" class="video-wrapper hide">
+                <!-- <div class="video-player" width="1280" height="800"></div> -->
+                <video controls class="video-player">
+                  <source src="/audio/01-kaffeekochen-small.mp4">
+                </video>
+              </div>
+              <!-- <div class="video-wrapper" fit-vids ng-if="slide.video" ng-controller="VideoCtrl"> -->
+                <!-- <iframe src="//player.vimeo.com/video/97737063?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1280" height="719" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+
+                <!-- <iframe id="ytplayer" width="1280" height="800" type="text/html" src="http://www.youtube.com/embed/PFVcfyqm9_Y?modestbranding=1&rel=0&controls=0&autoplay=0&playsinline=1&showinfo=0&origin=http://example.com" frameborder="0" allowfullscreen/>
+              </div> -->
+            </bnw-video-player>
         </div>
     </slick>
 

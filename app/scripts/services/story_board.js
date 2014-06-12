@@ -4,7 +4,8 @@ app
     title: "BRAVE<br>NEW<br>WORK"
   },{
     caption: "Kaffee kochen",
-    video: "PFVcfyqm9_Y"
+    video: "PFVcfyqm9_Y",
+    videoStill: "kaffee-kochen.jpg"
   },
   {
     caption: "St. Oberholz",

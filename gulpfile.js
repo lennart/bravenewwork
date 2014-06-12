@@ -13,7 +13,7 @@ var paths = {
   dist: 'dist',
   scripts: '*/*.js',
   fonts: 'fonts/{,*/}*.{svg,woff,eot,ttf}',
-  audios: 'audio/{,*/}*.{mp3}',
+  audios: 'audio/{,*/}*.{mp3,mp4}',
   templates: '{,*/}*.tpl.html',
   views: 'views/**/*.html',
   images: 'images/{,*/}*.{jpg,png,svg}',
@@ -46,6 +46,35 @@ gulp.task('clean:dist', function() {
     .pipe(clean());
 });
 
+gulp.task('clean:styles', function() {
+  return gulp.src([paths.dist + '/styles'], {read: false})
+    .pipe(clean());
+})
+
+gulp.task('clean:scripts', function() {
+  return gulp.src([paths.dist + '/scripts'], {read: false})
+    .pipe(clean());
+})
+
+gulp.task('clean:audios', function() {
+  return gulp.src([paths.dist + '/audio'], {read: false})
+    .pipe(clean());
+})
+
+gulp.task('clean:docs', function() {
+  return gulp.src([paths.dist + '/*.html'], {read: false})
+    .pipe(clean());
+})
+
+gulp.task('clean:fonts', function() {
+  return gulp.src([paths.dist + '/fonts'], {read: false})
+    .pipe(clean());
+})
+
+gulp.task('clean:images', function() {
+  return gulp.src([paths.dist + '/images'], {read: false})
+    .pipe(clean());
+})
 
 // CONNECT
 //
@@ -98,7 +127,7 @@ gulp.task('watch:src', function() {
 var uglify = require('gulp-uglify');
 var ngmin = require('gulp-ngmin');
 var concat = require('gulp-concat-util');
-gulp.task('scripts:dist', function() {
+gulp.task('scripts:dist', ['clean:scripts'], function() {
 
   gulp.src(paths.scripts, {cwd: paths.src})
     .pipe(ngmin())
@@ -127,7 +156,7 @@ gulp.task('styles:src', function() {
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(connect.reload());
 });
-gulp.task('styles:dist', function() {
+gulp.task('styles:dist', ['clean:styles'], function() {
   return gulp.src(paths.styles, {cwd: paths.src})
     .pipe(less())
     .pipe(prefix('last 1 version', '> 1%', 'ie 8'))
@@ -137,16 +166,16 @@ gulp.task('styles:dist', function() {
 
 // FONTS
 //
-gulp.task('fonts:dist', function() {
-  return gulp.src(paths.fonts, {cwd: paths.src})
+gulp.task('fonts:dist', ['clean:fonts'], function() {
+  gulp.src(paths.fonts, {cwd: paths.src})
     .pipe(gulp.dest(paths.dist + '/fonts'))
 });
 
 // FONTS
 //
-gulp.task('audios:dist', function() {
-  return gulp.src(paths.audios, {cwd: paths.src})
-    .pipe(gulp.dest(paths.dist + '/audios'))
+gulp.task('audios:dist',['clean:audios'], function() {
+  gulp.src(paths.audios, {cwd: paths.src})
+    .pipe(gulp.dest(paths.dist + '/audio'))
 });
 
 // INDEX
@@ -164,7 +193,7 @@ gulp.task('bower:src', function() {
     .pipe(gulp.dest(paths.src));
 
 });
-gulp.task('usemin:dist', ['styles:dist'], function() {
+gulp.task('usemin:dist', ['clean:docs', 'styles:dist'], function() {
 
   return gulp.src('index.html', {cwd: paths.src})
     .pipe(nginclude({assetsDirs: [paths.src]}))
@@ -248,15 +277,20 @@ gulp.task('karma:server', function() {
 // COPY
 //
 gulp.task('copy:dist', function() {
-  gulp.src(['favicon.ico', paths.images], {cwd: paths.src})
+  gulp.src(['favicon.ico'], {cwd: paths.src})
     .pipe(gulp.dest(paths.dist));
 });
+
+gulp.task('copy:images', ['clean:images'], function() {
+  gulp.src([, paths.images], {cwd: paths.src})
+    .pipe(gulp.dest(paths.dist + '/images'));
+})
 
 
 // ALIASES
 //
 gulp.task('default', ['build']);
 gulp.task('test', ['clean:test', 'jshint', 'karma:unit']);
-gulp.task('build', ['clean:dist', 'views:dist', 'copy:dist', 'fonts:dist', 'audios:dist']);
+gulp.task('build', ['views:dist', 'copy:dist', 'fonts:dist', 'audios:dist', 'copy:images']);
 gulp.task('serve', ['clean:tmp', 'bower:src', 'styles:src', 'connect:src', 'watch:src', 'open:src']);
 gulp.task('serve-dist', ['connect:dist', 'open:dist']);

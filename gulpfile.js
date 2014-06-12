@@ -18,7 +18,8 @@ var paths = {
   views: 'views/**/*.html',
   images: 'images/{,*/}*.{jpg,png,svg}',
   styles: 'styles/*.less',
-  data: 'data/{,*/}*.json'
+  data: 'data/{,*/}*.{json,kml}',
+
 };
 
 var banner = gutil.template('/**\n' +
@@ -83,7 +84,7 @@ gulp.task('connect:src', function() {
   connect.server({
     root: ['.tmp', '.dev', paths.src],
     port: 9000,
-    livereload: true
+    livereload: false
   });
 });
 gulp.task('connect:dist', function() {

@@ -1,7 +1,7 @@
 'use strict';
 
 app
-  .controller('PlacesCtrl', function($scope, StoryBoard, $log, $window) {
+  .controller('PlacesCtrl', function($scope, StoryBoard, $log, $window, $element) {
   $scope.myInterval = 5000;
   var slides = $scope.slides = StoryBoard();
   $scope.addSlide = function() {
@@ -17,5 +17,8 @@ app
   }
   $log.info('slides', slides);
 
+  $scope.onAfterChange = function() {
+    $log.info('slide changed', $scope.currentIndex);
+  }
 
 });

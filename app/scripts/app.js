@@ -6,6 +6,9 @@ var app = angular.module('lennart.Audiowalk', [
                // 'ui.bootstrap',
                // 'ngTouch',
                'slick',
+               'duScroll',
+               'FBAngular',
+               'google-maps',
                'ui.bootstrap',
                'fitVids'
                ])

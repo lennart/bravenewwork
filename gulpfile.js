@@ -77,6 +77,12 @@ gulp.task('clean:images', function() {
     .pipe(clean());
 })
 
+
+gulp.task('clean:data', function() {
+  return gulp.src([paths.dist + '/data'], {read: false})
+    .pipe(clean());
+})
+
 // CONNECT
 //
 var connect = require('gulp-connect');
@@ -286,6 +292,12 @@ gulp.task('copy:images', ['clean:images'], function() {
   gulp.src([, paths.images], {cwd: paths.src})
     .pipe(gulp.dest(paths.dist + '/images'));
 })
+
+
+gulp.task('copy:data', ['clean:data'], function() {
+  gulp.src([, paths.data], {cwd: paths.src})
+    .pipe(gulp.dest(paths.dist + '/data'));
+})
 var deploy = require("gulp-gh-pages");
 
 gulp.task('deploy', ['build'],  function() {
@@ -301,6 +313,6 @@ gulp.task('deploy', ['build'],  function() {
 //
 gulp.task('default', ['build']);
 gulp.task('test', ['clean:test', 'jshint', 'karma:unit']);
-gulp.task('build', ['views:dist', 'copy:dist', 'fonts:dist', 'audios:dist', 'copy:images']);
+gulp.task('build', ['views:dist', 'copy:dist', 'fonts:dist', 'audios:dist', 'copy:images', 'copy:data']);
 gulp.task('serve', ['clean:tmp', 'bower:src', 'styles:src', 'connect:src', 'watch:src', 'open:src']);
 gulp.task('serve-dist', ['connect:dist', 'open:dist']);

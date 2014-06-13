@@ -17,14 +17,14 @@ var app = angular.module('lennart.Audiowalk', [
 
   .config(function($locationProvider, $routeProvider) {
 
-    $locationProvider.html5Mode(false);
+    $locationProvider.html5Mode(true);
 
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/home.html'
+      .when('/kaffee-kochen', {
+        templateUrl: 'views/kaffee-kochen.html'
       })
-      .when('/features', {
-        templateUrl: 'views/features.html'
+      .when('/:slide?', {
+        templateUrl: 'views/home.html'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html'

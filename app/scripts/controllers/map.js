@@ -11,7 +11,7 @@ app
     showKml: true
   }
 
-  $scope.kmlUrl = $location.absUrl() + "/data/01-ausland.kml"
+  $scope.kmlUrl = $location.protocol() + "://" + $location.host() + "/data/01-ausland.kml"
 
   $log.info('kmlUrl', $scope.kmlUrl);
   $scope.kmlLayerOptions = {

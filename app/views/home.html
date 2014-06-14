@@ -1,5 +1,5 @@
 <div ng-controller="PlacesCtrl" class="page-wrapper">
-    <slick class="" infinite=false arrows=false current-index="currentSlide">
+    <slick class="" speed="{{carousel.speed}}" css-ease="{{carousel.cssEase}}" infinite=false arrows=false current-index="currentSlide" on-after-change="{{carousel.onAfterChange()}}" on-before-change="{{carousel.onBeforeChange()}}">
         <div ng-repeat="slide in slides" active="slide.active">
             <div class="content-slide">
 

@@ -24,7 +24,8 @@ var app = angular.module('lennart.Audiowalk', [
         templateUrl: 'views/kaffee-kochen.html'
       })
       .when('/:slide?', {
-        templateUrl: 'views/home.html'
+        templateUrl: 'views/home.html',
+        reloadOnSearch: false
       })
       .when('/contact', {
         templateUrl: 'views/contact.html'

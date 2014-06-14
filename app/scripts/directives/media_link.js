@@ -12,7 +12,7 @@ app
                 var url
                 var link = element.find('a.media-content-link')
                 if (scope.url) {
-                    url = url
+                    url = scope.url
                 }
                 else {
                     url = '#media-content-' + scope.index;

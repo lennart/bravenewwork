@@ -7,6 +7,7 @@ var app = angular.module('lennart.Audiowalk', [
     // 'ngTouch',
     'slick',
     'duScroll',
+    'ngSanitize',
     'angularSpinner',
     'FBAngular',
     'google-maps',

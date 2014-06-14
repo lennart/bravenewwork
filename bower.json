@@ -35,6 +35,7 @@
     "angular-scroll": "~0.5.7",
     "angular-fullscreen": "*",
     "angular-google-maps": "~1.1.1",
-    "angular-slick": "~0.1.9"
+    "angular-slick": "~0.1.9",
+    "angular-sanitize": "~1.2.18"
   }
 }

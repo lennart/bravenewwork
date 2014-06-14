@@ -3,7 +3,7 @@
 
         <div ng-repeat="slide in slides" active="slide.active">
             <div class="content-slide" du-scroll-container>
-                <a id="slide-scroll-top-{{$index}}"></a>
+                <!-- <a id="slide-scroll-top-{{$index}}"></a> -->
 
 
                 <div class="carousel-caption" ng-if="slide.caption">
@@ -27,10 +27,10 @@
                     </p>
                 </media-link>
 
-                <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl">
-                    <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+                <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl" ng-hide="{{!!slide.maps}}">
+                   <!--  <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe> -->
                     <audio>
-                        <source src="{{slide.audio}}">
+                        <source ng-src="{{slide.audio}}">
                     </audio>
                     <button type="button" class="btn btn-play btn-lg" ng-model="playing" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
                         <span class="glyphicon glyphicon-play" ng-hide="playing"></span>
@@ -48,7 +48,7 @@
                   <layer type="KmlLayer" options="kmlLayerOptions" ></layer>
                   </google-map>
                 </div>
-                <a href="#slide-scroll-top-{{$index}}" du-scrollspy><span class="glyphicon glyphicon-chevron-up"></span></a>
+                <!-- <a href="#slide-scroll-top-{{$index}}" du-scrollspy><span class="glyphicon glyphicon-chevron-up"></span></a> -->
                 <!-- <bnw-video-player index="$index" ng-if="slide.video" id="media-content-{{$index}}"> -->
 
                  <!--    <button class="btn-video-play">

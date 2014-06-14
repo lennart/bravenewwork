@@ -1,8 +1,16 @@
 'use strict';
 
 app
-    .controller('PlacesCtrl', function($scope, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout) {
+    .controller('PlacesCtrl', function($rootScope, $scope, $sce, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout) {
         var slides = $scope.slides = StoryBoard()
+
+        // $scope.slides = []
+
+        // angular.forEach(slides, function(slide) {
+        //   slide.audio = $sce.trustAsUrl(slide.audio)
+
+        //   $scope.slides.push(slide)
+        // });
         var api = {}
         var speed = 300
         var cssEase = "ease-in"
@@ -25,6 +33,7 @@ app
         api.onBeforeChange = function onBeforeChange() {
             $log.info('onBeforeChange', arguments);
             $scope.lastSlide = $scope.currentSlide;
+            $rootScope.$emit('audio:stop:' + $scope.currentSlide)
         }
 
         api.onAfterChange = function onAfterChange() {
@@ -35,6 +44,8 @@ app
                     $location.search({
                         'slide': id
                     }).replace()
+
+                    $rootScope.$emit('audio:play:' + $scope.currentSlide)
                 }
             }, speed);
         }

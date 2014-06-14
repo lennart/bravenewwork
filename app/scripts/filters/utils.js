@@ -14,8 +14,8 @@ app
   //   };
   // });
 
-  .filter('mediaUrl', function() {
-    return function(obj, index) {
-      return obj ? obj : ('#media-content-' + index);
-    }
-  });
+  // .filter('mediaUrl', function() {
+  //   return function(obj, index) {
+  //     return obj ? obj : ('#media-content-' + index);
+  //   }
+  // });

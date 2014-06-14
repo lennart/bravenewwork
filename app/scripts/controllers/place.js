@@ -2,12 +2,12 @@
 
 app
     .controller('PlaceCtrl', function($scope, $log, $element, $document) {
-
         var links = $element;
         $log.info('media content links', links[0], $element);
         if (!$scope.slide.url) {
+            $log.info('registering click handler for scrolling', $scope.slide.id);
             links.click(function(e) {
-                $log.info('registering click handler for scrolling', this);
+                $log.info('smooth scroll');
                 var id = "#" + this.href.split("#").pop();
                 var parents = $element.parents()
 

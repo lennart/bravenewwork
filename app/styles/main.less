@@ -103,6 +103,20 @@ a:hover {
   }
 }
 
+.ng-cloak {
+  display: none;
+}
+
+.bnw-carousel {
+  opacity: 0;
+  display: block;
+  transition: 500ms opacity ease-in;
+  transition-delay: 150ms;
+  &.slick-initialized {
+    opacity: 1;
+  }
+}
+
 .back-to-slides {
   display: block;
   margin: 35px;

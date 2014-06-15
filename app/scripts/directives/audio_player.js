@@ -8,22 +8,13 @@ app
         // var iframeElementID = iframeElement.id;
         // $scope.widget = SC.Widget(iframeElement);
         var btn = $element.find('button');
-        var audio = $element.find('audio')[0];
+        var player = $scope.audioPlayer; // $element.find('audio')[0];
 
         $scope.audioCanplay = false
-        audio.addEventListener('canplay', function() {
-            $scope.audioCanplay = true;
-        })
 
         $rootScope.$on('audio:play:' + $scope.$index, function() {
           if ($scope.slide.autoplay) {
-            if ($scope.audioCanplay) {
-                $scope.playing = true
-            } else {
-              audio.addEventListener('canplay', function() {
-                  $scope.playing = true
-              })
-            }
+              $scope.playing = true
           }
         })
 
@@ -34,13 +25,16 @@ app
 
         this.play = function() {
           btn.addClass("playing");
-          audio.play();
+          if (!player.playing) {
+            player.playPause($scope.resolvePlaylistIndex($scope.$index), true);
+          }
         }
 
         this.pause = function() {
-            btn.removeClass("playing");
-
-            audio.pause();
+          btn.removeClass("playing");
+          if (player.playing) {
+            player.playPause($scope.resolvePlaylistIndex($scope.$index), true);
+          }
         }
 
         $scope.$watch('playing', function(playing) {

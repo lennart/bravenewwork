@@ -3,6 +3,7 @@
 var app = angular.module('lennart.Audiowalk', [
     'ngAnimate',
     'ngRoute',
+    'mediaPlayer',
     // 'ui.bootstrap',
     // 'ngTouch',
     'slick',

@@ -4,13 +4,35 @@ app
     .controller('PlacesCtrl', function($rootScope, $scope, $sce, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout) {
         var slides = $scope.slides = StoryBoard()
 
+        var playlist = $scope.audioPlaylist = [
+        ];
+
+
         // $scope.slides = []
+        //
+        var audioMapping = {
 
-        // angular.forEach(slides, function(slide) {
-        //   slide.audio = $sce.trustAsUrl(slide.audio)
+        }
 
-        //   $scope.slides.push(slide)
-        // });
+        function slideIndexToPlaylist(index) {
+          return audioMapping[index]
+        }
+
+
+        $scope.resolvePlaylistIndex = slideIndexToPlaylist
+
+        function addTrack(track, index) {
+          audioMapping[index] = playlist.length
+          $scope.audioPlaylist.push({
+            src: track
+          })
+        }
+
+        angular.forEach(slides, function(slide, idx) {
+          if (slide.audio) {
+            addTrack(slide.audio, idx)
+          }
+        });
         var api = {}
         var speed = 300
         var cssEase = "ease-in"

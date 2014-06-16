@@ -26,7 +26,16 @@ app
         this.play = function() {
           btn.addClass("playing");
           if (!player.playing) {
-            player.playPause($scope.resolvePlaylistIndex($scope.$index), true);
+            $log.info('network', player.network)
+
+            if (player.network === undefined) {
+              player.one('suspend', function() {
+                self.play()
+              })
+            }
+            else {
+              player.playPause($scope.resolvePlaylistIndex($scope.$index), true);
+            }
           }
         }
 

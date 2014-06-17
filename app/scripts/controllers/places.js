@@ -3,7 +3,6 @@
 app
     .controller('PlacesCtrl', function($rootScope, $scope, $sce, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout, Geolocation) {
         var slides = $scope.slides = StoryBoard()
-
         var playlist = $scope.audioPlaylist = [
         ];
 
@@ -71,6 +70,27 @@ app
                 }
             }, speed);
         }
+
+        $scope.$on('scroll:next', function(event, index) {
+          $log.info('[places] scroll:next ', index)
+          var slide = slides[index],
+          underground = slide.underground
+          if (underground && underground.url) {
+            $log.debug('[places] going deeper from', slide.id, 'to', underground.url)
+            $location.path(underground.url)
+          }
+          else {
+            $log.debug('[places] can\'t find a way deeper into', slide)
+          }
+        })
+
+        $scope.$on('scroll:prev', function(event, index) {
+          $log.info('[places] scroll:prev ', index)
+        })
+
+        $scope.$on('scroll:show', function(event, index) {
+          $log.info('[places] scroll:show ', index)
+        })
 
         api.speed = speed
         api.cssEase = cssEase

@@ -8,9 +8,11 @@ app
     caption: "Kaffee kochen",
     instructions: "Nach oben wischen",
     scrollDown: true,
-    url: '/kaffee-kochen',
-    video: "PFVcfyqm9_Y",
-    videoStill: "kaffee-kochen.jpg"
+    underground: {
+      url: '/kaffee-kochen',
+      video: "PFVcfyqm9_Y",
+      videoStill: "kaffee-kochen.jpg"
+    }
   },
   {
     id: 'st-oberholz',

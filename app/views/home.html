@@ -4,54 +4,54 @@
     <bnw-slick draggable=false class="bnw-carousel" speed="{{carousel.speed}}" css-ease="{{carousel.cssEase}}" infinite=false arrows=false on-after-change="carousel.onAfterChange()" on-before-change="carousel.onBeforeChange()" current-index="currentSlide">
 
         <div ng-repeat="slide in slides" active="slide.active">
-            <div class="content-slide" du-scroll-container>
-                <!-- <a id="slide-scroll-top-{{$index}}"></a> -->
+            <bnw-scroll index="$index">
+                <div class="content-slide" du-scroll-container>
+                    <!-- <a id="slide-scroll-top-{{$index}}"></a> -->
 
 
-                <div class="carousel-caption" ng-if="slide.caption">
-                    <h6 class="slide-title">{{slide.caption}}</h3>
-                </div>
+                    <div class="carousel-caption" ng-if="slide.caption">
+                        <h6 class="slide-title">{{slide.caption}}</h3>
+                    </div>
 
-                <div class="jumbotron" ng-if="slide.title">
-                    <h1>BRAVE
-                        <br>NEW
-                        <br>WORK</h1>
-                </div>
+                    <div class="jumbotron" ng-if="slide.title">
+                        <h1>BRAVE
+                            <br>NEW
+                            <br>WORK</h1>
+                    </div>
 
-                <media-link url="slide.url" index="$index" ng-if="slide.instructions">
+                    <media-link url="slide.underground.url" index="$index" ng-if="slide.instructions">
 
-                  <p class="text-muted">{{slide.instructions}}</p>
+                        <p class="text-muted">{{slide.instructions}}</p>
 
-                    <p>
-                        <span class="text-muted glyphicon glyphicon-chevron-up"></span>
-                    </p>
-                </media-link>
+                        <p>
+                            <span class="text-muted glyphicon glyphicon-chevron-up"></span>
+                        </p>
+                    </media-link>
 
-                <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl" ng-hide="{{!!slide.maps}}">
-                   <!--  <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe> -->
+                    <div class="audio-wrapper" ng-if="slide.audio" ng-controller="AudioCtrl" ng-hide="{{!!slide.maps}}">
+                        <!--  <iframe id="sc-widget" class="hide" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/153552958%3Fsecret_token%3Ds-mjI3O&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false" width="100%" height="465" scrolling="no" frameborder="no"></iframe> -->
 
-                    <button type="button" class="btn btn-play btn-lg" ng-model="playing" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-                        <span class="glyphicon glyphicon-play" ng-hide="audioPlayer.playing"></span>
-                        <span class="glyphicon glyphicon-pause" ng-show="audioPlayer.playing"></span>
-                    </button>
-                </div>
+                        <button type="button" class="btn btn-play btn-lg" ng-model="playing" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+                            <span class="glyphicon glyphicon-play" ng-hide="audioPlayer.playing"></span>
+                            <span class="glyphicon glyphicon-pause" ng-show="audioPlayer.playing"></span>
+                        </button>
+                    </div>
 
-                <img id="media-content-{{$index}}" class="media-content-image" ng-src="{{slide.image}}" style="margin:auto;" ng-if="slide.image">
+                    <img id="media-content-{{$index}}" class="media-content-image" ng-src="{{slide.image}}" style="margin:auto;" ng-if="slide.image">
 
 
 
-                <div class="maps-wrapper" ng-if="slide.maps" fit-vids custom-selector="google-map" ng-controller="MapCtrl">
+                    <div class="maps-wrapper" ng-if="slide.maps" fit-vids custom-selector="google-map" ng-controller="MapCtrl">
 
-                  <google-map center="map.center" zoom="map.zoom" options="map.options">
-                    <layer type="KmlLayer" options="kmlLayerOptions" ></layer>
-                    <marker coords="map.currentPosition" fit="true"
-                      options="map.currentMarkerOptions"></marker>
-                  </google-map>
-                </div>
-                <!-- <a href="#slide-scroll-top-{{$index}}" du-scrollspy><span class="glyphicon glyphicon-chevron-up"></span></a> -->
-                <!-- <bnw-video-player index="$index" ng-if="slide.video" id="media-content-{{$index}}"> -->
+                        <google-map center="map.center" zoom="map.zoom" options="map.options">
+                            <layer type="KmlLayer" options="kmlLayerOptions"></layer>
+                            <marker coords="map.currentPosition" fit="true" options="map.currentMarkerOptions"></marker>
+                        </google-map>
+                    </div>
+                    <!-- <a href="#slide-scroll-top-{{$index}}" du-scrollspy><span class="glyphicon glyphicon-chevron-up"></span></a> -->
+                    <!-- <bnw-video-player index="$index" ng-if="slide.video" id="media-content-{{$index}}"> -->
 
-                 <!--    <button class="btn-video-play">
+                    <!--    <button class="btn-video-play">
                         <img src="/images/kaffee-kochen.jpg">
                         <div class="video-icon">
                             <span class="glyphicon glyphicon-facetime-video" ng-hide="playing || loading"></span>
@@ -71,12 +71,13 @@
 
                     <!-- <iframe id="ytplayer" width="1280" height="800" type="text/html" src="http://www.youtube.com/embed/PFVcfyqm9_Y?modestbranding=1&rel=0&controls=0&autoplay=0&playsinline=1&showinfo=0&origin=http://example.com" frameborder="0" allowfullscreen/>
               </div> -->
-                <!-- </bnw-video-player> -->
+                    <!-- </bnw-video-player> -->
 
 
-            </div>
+                </div>
+            </bnw-scroll>
         </div>
-    </slick>
+    </bnw-slick>
 
 
 

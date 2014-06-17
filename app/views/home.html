@@ -9,7 +9,7 @@
 
 
                 <div class="carousel-caption" ng-if="slide.caption">
-                    <h3>{{slide.caption}}</h3>
+                    <h6 class="slide-title">{{slide.caption}}</h3>
                 </div>
 
                 <div class="jumbotron" ng-if="slide.title">
@@ -18,14 +18,12 @@
                         <br>WORK</h1>
                 </div>
 
-                <media-link url="slide.url" index="$index" ng-if="slide.quote">
-                    <blockquote>
-                        <p class="lead">
-                            {{slide.quote}}
-                        </p>
-                    </blockquote>
+                <media-link url="slide.url" index="$index" ng-if="slide.instructions">
+
+                  <p class="text-muted">{{slide.instructions}}</p>
+
                     <p>
-                        <span class="glyphicon glyphicon-chevron-down"></span>
+                        <span class="text-muted glyphicon glyphicon-chevron-up"></span>
                     </p>
                 </media-link>
 
@@ -44,8 +42,10 @@
 
                 <div class="maps-wrapper" ng-if="slide.maps" fit-vids custom-selector="google-map" ng-controller="MapCtrl">
 
-                  <google-map center="map.center" zoom="map.zoom">
-                  <layer type="KmlLayer" options="kmlLayerOptions" ></layer>
+                  <google-map center="map.center" zoom="map.zoom" options="map.options">
+                    <layer type="KmlLayer" options="kmlLayerOptions" ></layer>
+                    <marker coords="map.currentPosition" fit="true"
+                      options="map.currentMarkerOptions"></marker>
                   </google-map>
                 </div>
                 <!-- <a href="#slide-scroll-top-{{$index}}" du-scrollspy><span class="glyphicon glyphicon-chevron-up"></span></a> -->

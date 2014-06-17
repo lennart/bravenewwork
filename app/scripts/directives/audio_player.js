@@ -34,7 +34,8 @@ app
               })
             }
             else {
-              player.playPause($scope.resolvePlaylistIndex($scope.$index), true);
+              var playlistIndex = $scope.resolvePlaylistIndex($scope.$index);
+              player.playPause(playlistIndex, true);
             }
           }
         }

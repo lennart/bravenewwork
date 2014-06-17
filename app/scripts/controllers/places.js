@@ -1,7 +1,7 @@
 'use strict';
 
 app
-    .controller('PlacesCtrl', function($rootScope, $scope, $sce, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout) {
+    .controller('PlacesCtrl', function($rootScope, $scope, $sce, $routeParams, StoryBoard, $log, $window, $element, $location, $timeout, Geolocation) {
         var slides = $scope.slides = StoryBoard()
 
         var playlist = $scope.audioPlaylist = [
@@ -78,4 +78,8 @@ app
         $scope.currentSlide = idToSlideIndex($scope.slides, $routeParams.slide)
 
         $scope.carousel = api
+
+        $scope.currentPosition = {}
+
+
     })

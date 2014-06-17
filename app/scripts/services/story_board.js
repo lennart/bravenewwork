@@ -6,7 +6,7 @@ app
   },{
     id: 'kaffee-kochen-quote',
     caption: "Kaffee kochen",
-    quote: "Eine Gratwanderung zwischen Elitarismus und Alternativität",
+    instructions: "Nach oben wischen",
     scrollDown: true,
     url: '/kaffee-kochen',
     video: "PFVcfyqm9_Y",
@@ -26,7 +26,7 @@ app
   },
   {
     id: 'tips-please',
-    quote: "No one has ever become poor by giving. - Anne Frank",
+    caption: "Spenden",
     image: "/images/tip-jar.jpg"
   }]
 })

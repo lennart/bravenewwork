@@ -10,9 +10,15 @@
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
+@font-size-base: 24px;
+
 @border-radius-base:        0;
 @border-radius-large:       0;
 @border-radius-small:       0;
+
+.slide-title {
+  text-transform: uppercase;
+}
 
 @import "../bower_components/bootstrap/less/mixins.less";
 
@@ -139,7 +145,7 @@ blockquote p.lead {
   // font-weight: 100;
 }
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container { height: 200px; }
 
 .btn-video-play, .btn-play {
   &.active:focus, &:active:focus, &:focus {

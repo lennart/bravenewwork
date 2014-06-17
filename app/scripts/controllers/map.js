@@ -1,15 +1,39 @@
 'use strict';
 
 app
-.controller('MapCtrl', function($log, $element, $scope, $location) {
+.controller('MapCtrl', function($log, $element, $scope, $location, Geolocation) {
   $scope.map = {
     center: {
       latitude: 52.529781,
       longitude: 13.401393,
     },
+    options: {
+      fit: true,
+      streetViewControl: false,
+      maxZoom: 40,
+      minZoom: 12
+    },
     zoom: 17,
-    showKml: true
+    currentPosition: {
+
+    },
+    showKml: true,
+    currentMarkerOptions: {
+      animation: google.maps.Animation.BOUNCE
+    }
   }
+
+  Geolocation.current().then(function(position) {
+    $log.info('current position', position)
+    $scope.map.currentPosition = {
+      longitude: position.coords.longitude,
+      latitude: position.coords.latitude
+    }
+
+  }).catch(function(err) {
+    $log.error('Failed to read current Position', err)
+  })
+
 
   $scope.kmlUrl = $location.protocol() + "://" + $location.host() + "/data/01-ausland.kml"
 

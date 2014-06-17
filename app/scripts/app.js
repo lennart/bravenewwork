@@ -13,7 +13,8 @@ var app = angular.module('lennart.Audiowalk', [
     'FBAngular',
     'google-maps',
     'ui.bootstrap',
-    'fitVids'
+    'fitVids',
+    'angular-loading-bar'
 ])
 
 app.constant('version', 'v0.1.0')

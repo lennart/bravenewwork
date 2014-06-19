@@ -6,12 +6,20 @@ app
   },{
     id: 'kaffee-kochen-quote',
     caption: "Kaffee kochen",
-    instructions: "Nach oben wischen",
+    // instructions: "Nach oben wischen",
     scrollDown: true,
-    underground: {
-      url: '/kaffee-kochen',
+    // underground: {
+    //   url: '/kaffee-kochen',
       video: "PFVcfyqm9_Y",
-      videoStill: "kaffee-kochen.jpg"
+      videoStill: "kaffee-kochen.jpg",
+    // },
+    theme: {
+
+    },
+    effects: {
+
+      "out": "slideInRight",
+      "in": ""
     }
   },
   {

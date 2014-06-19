@@ -1,11 +1,11 @@
 'use strict';
 
 app
-    .directive('bnwScroll', function($log, $window) {
+    .directive('bnwScroll', function($log, $swipe, $window, $document) {
         return {
             restrict: 'E',
             scope: {
-              'index': '='
+              'slideId': '='
             },
             controller: function() {
                 $log.info("[scroll] init");
@@ -15,49 +15,54 @@ app
             link: function(scope, element, attrs) {
                 var delta,
                     dragThreshold = 0.15, // "percentage" to drag before engaging
-                    dragStart = null, // used to determine touch / drag distance
-                    percentage = 0,
-                    target,
-                    windowHeight = $window.outerHeight,
-                    previousTarget;
+                    windowHeight = $window.outerHeight
+
+                scope.dragStart = null // used to determine touch / drag distance
+                scope.percentage = 0
+
+                // scope.y = 0
+                    // target,
+
+                    // previousTarget;
 
                 scope.touchStart = function touchStart(event) {
-
-                    if (dragStart !== null) {
+                    if (scope.dragStart !== null) {
                         return;
                     }
-                    if (event.originalEvent.touches) {
-                        event = event.originalEvent.touches[0];
-                    }
+                    // if (event.originalEvent.touches) {
+                    //     event = event.originalEvent.touches[0];
+                    // }
 
                     // where in the viewport was touched
-                    dragStart = event.clientY;
+                    scope.dragStart = event.clientY;
 
                     // // make sure we're dealing with a slide
-                    target = element[0];
+                    // target = element[0];
 
                     // // disable transitions while dragging
                     // target.classList.add('no-animation');
 
-                    // previousTarget = slides.eq(currentSlideIndex - 1)[0];
+                    // previousTarget = slides.eq(currentSlideslideId - 1)[0];
                     // previousTarget.classList.add('no-animation');
                 }
 
                 scope.touchMove = function touchMove(event) {
-
-                    if (dragStart === null) {
+                    if (scope.dragStart === null) {
                         return;
                     }
-                    if (event.originalEvent.touches) {
-                        event = event.originalEvent.touches[0];
-                    }
+                    // if (event.originalEvent.touches) {
+                    //     event = event.originalEvent.touches[0];
+                    // }
 
-                    delta = dragStart - event.clientY;
-                    percentage = delta / windowHeight;
+                    delta = scope.dragStart - event.clientY;
+
+                    scope.percentage = delta / windowHeight;
+
+                    $log.debug('percent dragged', scope.percentage)
 
                     // // Going down/next. Animate the height of the target element.
-                    // if (percentage > 0) {
-                    //     target.style.height = (100 - (percentage * 100)) + '%';
+                    // if (scope.percentage > 0) {
+                    //     target.style.height = (100 - (scope.percentage * 100)) + '%';
                     //     if (previousTarget) {
                     //         previousTarget.style.height = ''; // reset
                     //     }
@@ -65,7 +70,7 @@ app
 
                     // // Going up/prev. Animate the height of the _previous_ element.
                     // else if (previousTarget) {
-                    //     previousTarget.style.height = (-percentage * 100) + '%';
+                    //     previousTarget.style.height = (-scope.percentage * 100) + '%';
                     //     target.style.height = ''; // reset
                     // }
 
@@ -75,29 +80,36 @@ app
 
                 scope.touchEnd = function touchEnd() {
 
-                    dragStart = null;
-                    target.classList.remove('no-animation');
-                    if (previousTarget) {
-                        previousTarget.classList.remove('no-animation');
-                    }
+                    scope.dragStart = null;
+                    // target.classList.remove('no-animation');
+                    // if (previousTarget) {
+                    //     previousTarget.classList.remove('no-animation');
+                    // }
 
-                    if (percentage >= dragThreshold) {
-                        scope.$emit('scroll:next', scope.index);
-                    } else if (Math.abs(percentage) >= dragThreshold) {
-                        scope.$emit('scroll:prev', scope.index);
+                    if (scope.percentage >= dragThreshold) {
+                        scope.$emit('scroll:next', scope.slideId);
+                    } else if (Math.abs(scope.percentage) >= dragThreshold) {
+                        scope.$emit('scroll:prev', scope.slideId);
                     } else {
                         // show current slide i.e. snap back
-                        scope.$emit('scroll:show', scope.index);
+                        scope.$emit('scroll:show', scope.slideId);
                     }
 
-                    percentage = 0;
+                    scope.percentage = 0;
 
                 }
-                element.on({
-                    'touchstart': scope.touchStart,
-                    'touchmove': scope.touchMove,
-                    'touchend': scope.touchEnd
-                });
+                // $document.on('scroll', function(e) {
+                //   $log.debug('scroll', e);
+                // })
+                // element.on('pointerdown', scope.touchStart)
+                // element.on('pointermove', scope.touchMove)
+                // element.on('pointerup', scope.touchEnd)
+                // $swipe.bind(element, {
+                //   'start': scope.touchStart,
+                //   'move': scope.touchMove,
+                //   'end': scope.touchEnd
+                // })
+                //
             }
         }
     })

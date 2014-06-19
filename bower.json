@@ -38,6 +38,7 @@
     "angular-slick": "~0.1.9",
     "angular-sanitize": "~1.2.18",
     "angular-media-player": "~0.5.5",
-    "angular-loading-bar": "~0.4.3"
+    "angular-loading-bar": "~0.4.3",
+    "pointerevents-polyfill": "~0.2.0"
   }
 }

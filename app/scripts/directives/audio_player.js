@@ -35,6 +35,7 @@ app
             }
             else {
               var playlistIndex = $scope.resolvePlaylistIndex($scope.$index);
+              $log.info('playing', playlistIndex)
               player.playPause(playlistIndex, true);
             }
           }

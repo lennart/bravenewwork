@@ -5,7 +5,7 @@ var app = angular.module('lennart.Audiowalk', [
     'ngRoute',
     'mediaPlayer',
     // 'ui.bootstrap',
-    // 'ngTouch',
+    'ngTouch',
     'slick',
     'duScroll',
     'ngSanitize',
@@ -40,13 +40,15 @@ app.constant('version', 'v0.1.0')
 
 
 })
-    .run(function($rootScope, $location) {
+    .run(function($rootScope, $location, $log) {
         $rootScope.$on('duScrollspy:becameActive', function($event, $element) {
             //Automaticly update location
-            var hash = $element.prop('hash');
+            $log.debug('scroll spy active', $element.data('slideId'));
+            var hash = $element.data('slideId');
             if (hash) {
-                $location.hash(hash.substr(1)).replace();
+                $location.search({ 'slide': hash }).replace();
                 $rootScope.$apply();
+                $rootScope.$on('slide:changed', hash)
             }
         });
     });

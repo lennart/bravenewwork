@@ -17,7 +17,6 @@ app
 
     },
     effects: {
-
       "out": "slideInRight",
       "in": ""
     }

@@ -3,7 +3,7 @@
 app
     .controller('AudioCtrl', function($rootScope, $log, $scope, $element) {
         var self = this
-        $scope.playing = 0;
+        $scope.playing = false;
         // var iframeElement = $element.find('#sc-widget')[0];
         // var iframeElementID = iframeElement.id;
         // $scope.widget = SC.Widget(iframeElement);
@@ -20,6 +20,12 @@ app
 
         $rootScope.$on('audio:stop:' + $scope.$index, function() {
           $scope.playing = false
+        })
+
+        $element.find("button").click(function(e){
+          $scope.playing = !$scope.playing;
+          
+          $log.debug("clicked the button", $scope.playing);
         })
 
 

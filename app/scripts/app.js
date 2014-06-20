@@ -12,7 +12,7 @@ var app = angular.module('lennart.Audiowalk', [
     'angularSpinner',
     'FBAngular',
     'google-maps',
-    'ui.bootstrap',
+    // 'ui.bootstrap',
     'fitVids',
     'angular-loading-bar'
 ])

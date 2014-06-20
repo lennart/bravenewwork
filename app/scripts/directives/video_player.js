@@ -1,5 +1,5 @@
 'use strict';
-
+// UNUSED, Don't know if we need JS API for YouTube
 app
 
 .directive('bnwVideoPlayer', function($log, VideoPlayer, $timeout) {

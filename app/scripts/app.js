@@ -4,15 +4,12 @@ var app = angular.module('lennart.Audiowalk', [
     'ngAnimate',
     'ngRoute',
     'mediaPlayer',
-    // 'ui.bootstrap',
     'ngTouch',
-    'slick',
     'duScroll',
     'ngSanitize',
     'angularSpinner',
     'FBAngular',
     'google-maps',
-    // 'ui.bootstrap',
     'fitVids',
     'angular-loading-bar'
 ])

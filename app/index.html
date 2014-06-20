@@ -35,7 +35,6 @@
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.min.css" />
   <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css" />
   <!-- endbower -->
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
@@ -53,9 +52,11 @@
     </audio>
             <div ng-view></div>
 
+  <!-- external APIs -->
   <script src="https://w.soundcloud.com/player/api.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,visualization&sensor=false&language=en&v=3.13"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
+
   <!-- build:js scripts/components.min.js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <!-- bower:js -->
@@ -72,15 +73,12 @@
   <script src="bower_components/angular-fullscreen/src/angular-fullscreen.js"></script>
   <script src="bower_components/lodash/dist/lodash.compat.js"></script>
   <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
-  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-  <script src="bower_components/angular-slick/dist/slick.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
   <script src="bower_components/angular-media-player/dist/angular-media-player.min.js"></script>
   <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
   <script src="bower_components/WeakMap/WeakMap.js"></script>
   <script src="bower_components/pointerevents-polyfill/pointerevents.min.js"></script>
   <!-- endbower -->
-  <script src="bower_components/slick-carousel/slick/slick.js"></script>
   <!-- endbuild -->
 
   <!-- build:js scripts/app.min.js -->
@@ -89,22 +87,16 @@
 
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/places.js"></script>
-  <script src="scripts/controllers/place.js"></script>
+  <script src="scripts/controllers/audio.js"></script>
   <script src="scripts/controllers/video.js"></script>
   <script src="scripts/controllers/map.js"></script>
-  <script src="scripts/controllers/slides.js"></script>
-  <script src="scripts/controllers/underground.js"></script>
 
   <script src="scripts/services/geolocation.js"></script>
   <script src="scripts/services/video_player.js"></script>
   <script src="scripts/services/story_board.js"></script>
 
-  <script src="scripts/directives/audio_player.js"></script>
   <script src="scripts/directives/scroll.js"></script>
   <script src="scripts/directives/video_player.js"></script>
-  <script src="scripts/directives/slick.js"></script>
-  <script src="scripts/directives/media_link.js"></script>
-
   <!-- endbuild -->
 
 </body>

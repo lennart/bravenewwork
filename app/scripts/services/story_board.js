@@ -35,6 +35,71 @@ app
     autoplay: true
   },
   {
+    id: 'brunnenstrasse',
+    caption: "Brunnenstrasse 10",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'leihamt',
+    caption: "Königliches Leihamt",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'leerstehendes-haus',
+    caption: "Leerstehendes Haus",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'linienstrasse-206',
+    caption: "Linienstrasse 206",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'garnisonsfriedhof',
+    caption: "Garnisonsfriedhof",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'centraler-arbeitsnachweis',
+    caption: "Centraler Arbeitsnachweis",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'garnisonsfriedhof',
+    caption: "Garnisonsfriedhof",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'wunschgarten',
+    caption: "Wunschgarten",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'flitterzaun',
+    caption: "Flitterzaun",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'volksbuehne',
+    caption: "Volksbühne AM Rosa-Luxemburg-Platz",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'arbeiterdenkmal',
+    caption: "Arbeiterdenkmal",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'karl-liebknecht-haus',
+    caption: "Karl-Liebknecht-Haus",
+    instructions: "Content missing!"
+  },
+  {
+    id: 'soho-House',
+    caption: "Soho-House",
+    instructions: "Content missing!"
+  },
+  {
     id: 'tips-please',
     caption: "Spenden",
     image: "/images/tip-jar.jpg"

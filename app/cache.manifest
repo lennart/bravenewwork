@@ -1,10 +1,10 @@
 CACHE MANIFEST
 # This is a comment.
-# Cache manifest version 0.0.1
+# Cache manifest version 0.0.2
 # If you change the version number in this comment,
 # the cache manifest is no longer byte-for-byte
 # identical.
- 
+
 audio/01-stoberholz.mp3
 audio/02-jura.mp3
 audio/arbeiterdenkmal.m4a
@@ -19,7 +19,7 @@ audio/soho-house.m4a
 audio/st.oberholz.m4a
 audio/volksbuehne.m4a
 audio/wunschgarten_flitterzaun.m4a
- 
+
 NETWORK:
 # All URLs that start with the following lines
 # are whitelisted.

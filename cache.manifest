@@ -5,13 +5,12 @@ CACHE MANIFEST
 # the cache manifest is no longer byte-for-byte
 # identical.
 
-audio/01-stoberholz.mp3
 audio/02-jura.mp3
 audio/arbeiterdenkmal.mp3
 audio/arbeitsnachweis.mp3
 audio/besetztes_haus.mp3
 audio/garnisonsfriedhof.mp3
-audio/haus_aus_einem_anderen_Land.mp3
+audio/haus_aus_einem_anderen_land.mp3
 audio/karl-liebknecht-haus.mp3
 audio/leerstehendes_haus.mp3
 audio/leihamt.mp3
@@ -19,6 +18,7 @@ audio/soho-house.mp3
 audio/st.oberholz.mp3
 audio/volksbuehne.mp3
 audio/wunschgarten_flitterzaun.mp3
+video/kaffee.mp4
 
 NETWORK:
 # All URLs that start with the following lines

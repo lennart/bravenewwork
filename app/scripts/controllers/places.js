@@ -29,6 +29,10 @@ app
 
         })
 
+        $scope.$on('h6:click', function(event,id){
+            console.log("asdasd!");
+        });
+
         // $rootScope.$on('$routeChangeStart', function(scope, next, current) {
         //   $log.info('route change start', next, current, scope)
         // })

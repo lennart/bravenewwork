@@ -47,25 +47,17 @@ app
         }
     });
 
-
     $scope.updateCurrentSlide = function(slideId) {
         $scope.currentSlide = Places.idToSlideIndex(slideId)
         $scope.slide = Places.slides[$scope.currentSlide]
         $scope.$index = $scope.currentSlide
     }
 
-    $rootScope.$on('$routeChangeStart', function(e, next, current) {
-      if (current) {
-        $log.info('Stopping Audio', $scope.$index)
-        $rootScope.$emit('audio:stop:' + $scope.$index)
-      }
-      $scope.updateCurrentSlide(next.params.slide)
+    $rootScope.$on('$routeChangeSuccess', function(e, next, current) {
+        if (current) {
+            $log.info('Stopping Audio', $scope.$index)
+            $rootScope.$emit('audio:stop:' + $scope.$index)
+        }
+        $scope.updateCurrentSlide(next.params.slide)
     })
-
-    // updateCurrentSlide()
-
-    // $rootScope.$on('$routeChangeStart', function(scope, next, current) {
-    //   $log.info('route change start', next, current, scope)
-    // })
-
 });

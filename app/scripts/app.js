@@ -25,7 +25,6 @@ app.constant('version', 'v0.1.0')
         })
         .when('/:slide?', {
             templateUrl: 'views/home.html',
-            reloadOnSearch: false
         })
         .when('/contact', {
             templateUrl: 'views/contact.html'
@@ -37,5 +36,5 @@ app.constant('version', 'v0.1.0')
 
 })
     .run(function($rootScope, $location, $log) {
-       
+
     });

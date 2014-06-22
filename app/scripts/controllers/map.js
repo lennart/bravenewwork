@@ -3,17 +3,16 @@
 app
 .controller('MapCtrl', function($log, $element, $scope, $location, Geolocation) {
   $scope.map = {
-    center: {
-      latitude: 52.529781,
-      longitude: 13.401393,
-    },
+    // center: {
+    //   latitude: 52.529781,
+    //   longitude: 13.401393,
+    // },
     options: {
       fit: true,
       streetViewControl: false,
       maxZoom: 40,
       minZoom: 12
     },
-    zoom: 17,
     currentPosition: {
 
     },
@@ -35,7 +34,7 @@ app
   })
 
 
-  $scope.kmlUrl = $location.protocol() + "://" + $location.host() + "/data/01-ausland.kml"
+  $scope.kmlUrl = $location.protocol() + "://" + $location.host() + $scope.slide.maps.kml
 
   $log.info('kmlUrl', $scope.kmlUrl);
   $scope.kmlLayerOptions = {

@@ -17,7 +17,7 @@ app.constant('version', 'v0.1.0')
 
 .config(function($locationProvider, $routeProvider) {
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 
     $routeProvider
         .when('/kaffee-kochen', {
@@ -25,7 +25,7 @@ app.constant('version', 'v0.1.0')
         })
         .when('/:slide?', {
             templateUrl: 'views/home.html',
-            reloadOnSearch: true
+            reloadOnSearch: false
         })
         .when('/contact', {
             templateUrl: 'views/contact.html'

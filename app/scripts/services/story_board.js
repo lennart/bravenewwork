@@ -64,11 +64,6 @@ app
     instructions: "Content missing!"
   },
   {
-    id: 'garnisonsfriedhof',
-    caption: "Garnisonsfriedhof",
-    instructions: "Content missing!"
-  },
-  {
     id: 'wunschgarten',
     caption: "Wunschgarten",
     instructions: "Content missing!"

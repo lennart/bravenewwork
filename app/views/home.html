@@ -1,6 +1,5 @@
 <div ng-controller="PlacesCtrl" class="page-wrapper" ng-cloak>
-    <div ng-repeat="slide in slides">
-        <bnw-scroll slide-id="slide.id">
+    
             <div class="content-slide">
                 <a id="slide-scroll-top-{{$index}}" data-slide-id="{{slide.id}}" class="slide-marker"></a>
 
@@ -15,7 +14,7 @@
                         <br>WORK</h1><!-- HARDCODED, as I didn't figure out how to unescape HTML, maybe we render markdown here through a filter-->
                 </div>
 
-                <div class="slide-instructions" ng-if="slide-instructions">
+                <div class="slide-instructions" ng-if="slide.instructions">
                   <p class="text-muted">{{slide.instructions}}</p>
                 </div>
 
@@ -65,6 +64,15 @@
                 <a href="#slide-scroll-top-{{$index}}" data-slide-id="{{slide.id}}" du-scrollspy></a>
                 <!-- </bnw-video-player>-->
             </div>
-        </bnw-scroll>
-    </div>
+
+            <ul class="pager">
+              <li class="previous" ng-if="prevSlideId"><a href="/?slide={{prevSlideId}}"><span class="glyphicon glyphicon-chevron-left"> </span></a></li>
+              <li class="next" ng-if="nextSlideId" ><a href="/?slide={{nextSlideId}}"><span class="glyphicon glyphicon-chevron-right"> </span></a></li>
+            </ul>
+
+        <div class="row">
+            <div class="col-xs-6"></div>
+            <div class="col-xs-6"></div>
+        </div>
+
 </div>

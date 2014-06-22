@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Brave New Work - Weg vom Haus aus einem anderen Land zum Königlichen Leihamt</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>Untitled layer</name>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Haus aus einem anderen Land - Brunnenstraße 10</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.400769999999966,52.5314,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Königliches Leihamt - Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.396349999999984,52.52858,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Directions from Brunnenstraße 10 to Linienstraße 98</name>
+			<Placemark>
+				<styleUrl>#line-1267FF-5</styleUrl>
+				<name>Directions from Brunnenstraße 10 to Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>13.400110000000002,52.53119,0.0 13.40113,52.530010000000004,0.0 13.401180000000002,52.52995000000001,0.0 13.401230000000002,52.529900000000005,0.0 13.401280000000002,52.52987,0.0 13.401330000000002,52.529830000000004,0.0 13.4014,52.52978,0.0 13.40136,52.529770000000006,0.0 13.401290000000001,52.52976,0.0 13.40121,52.52975000000001,0.0 13.401110000000001,52.529720000000005,0.0 13.40098,52.529680000000006,0.0 13.400850000000002,52.52966000000001,0.0 13.40033,52.529630000000004,0.0 13.400210000000001,52.529610000000005,0.0 13.40009,52.52958,0.0 13.397850000000002,52.52944,0.0 13.397710000000002,52.529430000000005,0.0 13.397570000000002,52.529430000000005,0.0 13.3976,52.529340000000005,0.0 13.397620000000002,52.528760000000005,0.0 13.397300000000001,52.52868,0.0 13.396450000000002,52.52845000000001,0.0</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Brunnenstraße 10</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Brunnenstraße 7E, 10119 Berlin, Germany]]></description>
+				<Point>
+					<coordinates>13.400114199999962,52.5311919,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Linienstraße 163, 10115 Berlin, Germany]]></description>
+				<Point>
+					<coordinates>13.396447200000011,52.5284464,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-DB4436'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='line-1267FF-5'>
+			<LineStyle>
+				<color>ffFF6712</color>
+				<width>5</width>
+			</LineStyle>
+		</Style>
+	</Document>
+</kml>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Brave New Work - Weg vom Königlichen Leihamt zum leerstehenden Haus</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>Untitled layer</name>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Königliches Leihamt - Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.396349999999984,52.52858,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Leerstehendes Haus - Linienstraße 206</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>13.402793999999972,52.528892,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Directions from Leerstehendes Haus - Linienstraße 206 to Königliches Leihamt - Linienstraße 98</name>
+			<Placemark>
+				<styleUrl>#line-1267FF-5</styleUrl>
+				<name>Directions from Leerstehendes Haus - Linienstraße 206 to Königliches Leihamt - Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>13.402790000000001,52.528980000000004,0.0 13.40196,52.52897,0.0 13.401900000000001,52.52897,0.0 13.401850000000001,52.528960000000005,0.0 13.400060000000002,52.52891,0.0 13.39939,52.528890000000004,0.0 13.39864,52.52888,0.0 13.39859,52.52888,0.0 13.398000000000001,52.52886,0.0 13.39798,52.52886,0.0 13.397950000000002,52.528850000000006,0.0 13.397920000000001,52.52884,0.0 13.397620000000002,52.528760000000005,0.0 13.397300000000001,52.52868,0.0 13.396450000000002,52.52845000000001,0.0</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Leerstehendes Haus - Linienstraße 206</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Linienstraße 206, 10119 Berlin, Germany]]></description>
+				<Point>
+					<coordinates>13.402788399999963,52.5289849,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Königliches Leihamt - Linienstraße 98</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Linienstraße 163, 10115 Berlin, Germany]]></description>
+				<Point>
+					<coordinates>13.396447200000011,52.5284464,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-DB4436'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='line-1267FF-5'>
+			<LineStyle>
+				<color>ffFF6712</color>
+				<width>5</width>
+			</LineStyle>
+		</Style>
+	</Document>
+</kml>

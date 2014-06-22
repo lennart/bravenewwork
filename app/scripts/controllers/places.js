@@ -67,6 +67,8 @@ app
             console.log("route update", scope, next, current);
         })
 
+        $rootScope.$emit('audio:play:' + $scope.currentSlide)
+
         // $rootScope.$on('$routeChangeStart', function(scope, next, current) {
         //   $log.info('route change start', next, current, scope)
         // })

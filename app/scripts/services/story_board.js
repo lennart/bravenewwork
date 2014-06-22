@@ -44,8 +44,7 @@ app
   {
     id: 'brunnenstrasse',
     caption: "Brunnenstrasse 10",
-    instructions: "Content missing!",
-    audio: "/audio/haus_aus_einem_anderen_Land.m4a"
+    audio: "/audio/haus_aus_einem_anderen_Land.mp3"
   },
   {
     id: 'weg-zum-leihamt',
@@ -65,12 +64,12 @@ app
   {
     id: 'leihamt',
     caption: "Königliches Leihamt",
-    instructions: "Content missing!"
+    audio: "/audio/leihamt.mp3",
   },
   {
     id: 'leerstehendes-haus',
     caption: "Leerstehendes Haus",
-    instructions: "Content missing!"
+    audio: "/audio/leerstehendes_haus.mp3"
   },
   {
     id: 'linienstrasse-206',
@@ -80,42 +79,42 @@ app
   {
     id: 'garnisonsfriedhof',
     caption: "Garnisonsfriedhof",
-    instructions: "Content missing!"
+    audio: "/audio/garnisonsfriedhof.mp3"
   },
   {
     id: 'centraler-arbeitsnachweis',
     caption: "Centraler Arbeitsnachweis",
-    instructions: "Content missing!"
+    audio: "/audio/arbeitsnachweis.mp3"
   },
   {
     id: 'wunschgarten',
     caption: "Wunschgarten",
-    instructions: "Content missing!"
+    audio: "/audio/wunschgarten_flitterzaun.mp3"
   },
   {
     id: 'flitterzaun',
     caption: "Flitterzaun",
-    instructions: "Content missing!"
+    audio: "/audio/wunschgarten_flitterzaun.mp3"
   },
   {
     id: 'volksbuehne',
     caption: "Volksbühne AM Rosa-Luxemburg-Platz",
-    instructions: "Content missing!"
+    audio: "/audio/wunschgarten_flitterzaun.mp3"
   },
   {
     id: 'arbeiterdenkmal',
     caption: "Arbeiterdenkmal",
-    instructions: "Content missing!"
+    audio: "/audio/Arbeiterdenkmal.mp3"
   },
   {
     id: 'karl-liebknecht-haus',
     caption: "Karl-Liebknecht-Haus",
-    instructions: "Content missing!"
+    audio: "/audio/karl-liebknecht-haus.mp3"
   },
   {
     id: 'soho-House',
     caption: "Soho-House",
-    instructions: "Content missing!"
+    audio: "/audio/soho-house.mp3"
   },
   {
     id: 'tips-please',

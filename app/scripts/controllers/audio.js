@@ -14,10 +14,9 @@ app
         $scope.audioCanplay = false
 
         $rootScope.$on('audio:play:' + $scope.$index, function() {
-            if ($scope.slide.autoplay) {
                 // $scope.playing = true
                 self.play()
-            }
+            // }
         })
 
         $rootScope.$on('audio:stop:' + $scope.$index, function() {
@@ -93,6 +92,11 @@ app
         //     } else {
         //         self.pause()
         //     }
-        // })
+        // }
+        // )
+
+        if ($scope.slide.autoplay) {
+          self.play()
+        }
 
     });

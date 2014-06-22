@@ -1,9 +1,0 @@
-.tmp
-.DS_Store
-bower_components/
-node_modules/
-tmp/
-server.error.log
-server.log
-/dist
-

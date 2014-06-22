@@ -2,12 +2,9 @@
 
 app
 
-.controller('MainCtrl', function($scope, $location, version, $log, VideoPlayer, $window, Fullscreen, StoryBoard) {
-
+.controller('MainCtrl', function($scope, $location, version, $log, VideoPlayer, $window, Fullscreen, Places, $routeParams, $rootScope) {
     $scope.$path = $location.path.bind($location);
     $scope.version = version;
-
-    var slides = StoryBoard()
 
     VideoPlayer.get().then(function(player) {
         $log.info('got player', player);
@@ -44,10 +41,31 @@ app
         })
     }
 
-    angular.forEach(slides, function(slide, idx) {
+    angular.forEach(Places.slides, function(slide, idx) {
         if (slide.audio) {
             addTrack(slide.audio, idx)
         }
     });
+
+
+    $scope.updateCurrentSlide = function(slideId) {
+        $scope.currentSlide = Places.idToSlideIndex(slideId)
+        $scope.slide = Places.slides[$scope.currentSlide]
+        $scope.$index = $scope.currentSlide
+    }
+
+    $rootScope.$on('$routeChangeStart', function(e, next, current) {
+      if (current) {
+        $log.info('Stopping Audio', $scope.$index)
+        $rootScope.$emit('audio:stop:' + $scope.$index)
+      }
+      $scope.updateCurrentSlide(next.params.slide)
+    })
+
+    // updateCurrentSlide()
+
+    // $rootScope.$on('$routeChangeStart', function(scope, next, current) {
+    //   $log.info('route change start', next, current, scope)
+    // })
 
 });

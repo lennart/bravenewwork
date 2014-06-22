@@ -1,5 +1,5 @@
 <div ng-controller="PlacesCtrl" class="page-wrapper" ng-cloak>
-    
+
             <div class="content-slide">
                 <a id="slide-scroll-top-{{$index}}" data-slide-id="{{slide.id}}" class="slide-marker"></a>
 
@@ -33,7 +33,7 @@
 
                 <div class="maps-wrapper" ng-if="slide.maps" fit-vids custom-selector="google-map" ng-controller="MapCtrl">
 
-                    <google-map center="map.center" zoom="map.zoom" options="map.options">
+                    <google-map center="slide.maps.center" zoom="slide.maps.zoom" options="map.options">
                         <layer type="KmlLayer" options="kmlLayerOptions"></layer>
                         <marker coords="map.currentPosition" fit="true" options="map.currentMarkerOptions"></marker>
                     </google-map>

@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# This is a comment.
+# Cache manifest version 0.0.1
+# If you change the version number in this comment,
+# the cache manifest is no longer byte-for-byte
+# identical.
+ 
+audio/01-stoberholz.mp3
+audio/02-jura.mp3
+audio/arbeiterdenkmal.m4a
+audio/arbeitsnachweis.m4a
+audio/besetztes_haus.m4a
+audio/garnisonsfriedhof.m4a
+audio/haus_aus_einem_anderen_Land.m4a
+audio/karl-liebknecht-haus.m4a
+audio/leerstehendes_haus.m4a
+audio/leihamt.m4a
+audio/soho-house.m4a
+audio/st.oberholz.m4a
+audio/volksbuehne.m4a
+audio/wunschgarten_flitterzaun.m4a
+ 
+NETWORK:
+# All URLs that start with the following lines
+# are whitelisted.
+*

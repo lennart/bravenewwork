@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # This is a comment.
-# Cache manifest version 0.0.13
+# Cache manifest version 0.0.14
 # If you change the version number in this comment,
 # the cache manifest is no longer byte-for-byte
 # identical.
@@ -43,7 +43,6 @@ images/st.oberholz.jpg
 images/tip-jar.jpg
 images/volksbuehne.jpg
 images/wunschgarten.jpg
-
 NETWORK:
 # All URLs that start with the following lines
 # are whitelisted.

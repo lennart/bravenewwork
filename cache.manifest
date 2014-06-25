@@ -9,11 +9,6 @@ audio/3.mp3
 audio/4.mp3
 audio/5.mp3
 audio/6.mp3
-audio/A.mp3
-audio/B.mp3
-audio/C.mp3
-audio/D.mp3
-audio/E.mp3
 audio/arbeiterdenkmal.mp3
 audio/arbeitsnachweis.mp3
 audio/karl-liebknecht-haus.mp3
@@ -30,6 +25,11 @@ scripts/components.min.js
 scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
+audio/walk/A.mp3
+audio/walk/B.mp3
+audio/walk/C.mp3
+audio/walk/D.mp3
+audio/walk/E.mp3
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
@@ -58,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: 1ceed0e8dc955a0f9de6f7e55781b0abce2b3098d9b3c43ad3cb825dfc5872e6
+# hash: 988d14f485ef84419fe62d076a8cde86c40a156183a23b87bf7be3ec33f81361

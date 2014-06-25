@@ -24,6 +24,10 @@ audio/soho-house.mp3
 audio/st.oberholz.mp3
 audio/volksbuehne.mp3
 audio/wunschgarten_flitterzaun.mp3
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
 images/Arbeiterdenkmal.jpg
 images/Arbeitsnachweis.jpg
 images/Besetztes_Haus.jpg
@@ -57,4 +61,4 @@ http://*
 https://*
 *
 
-# hash: 54216974229cb4a7b65e64ee6ee5f0598f0be48dbb198a2ac32f377ad7db316a
+# hash: 288874a72d34d88ed88617a1fcba8eabb7620eef348bf50aeff8c583cec12f2e

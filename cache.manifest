@@ -25,11 +25,11 @@ scripts/components.min.js
 scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
-audio/walk/A.mp3
-audio/walk/B.mp3
-audio/walk/C.mp3
-audio/walk/D.mp3
-audio/walk/E.mp3
+audio/way/a.mp3
+audio/way/b.mp3
+audio/way/c.mp3
+audio/way/d.mp3
+audio/way/e.mp3
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
@@ -58,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: 988d14f485ef84419fe62d076a8cde86c40a156183a23b87bf7be3ec33f81361
+# hash: 88951c84fc7b9e320ee72380d45edb0871a9d3025d26c2276832016149a088e7

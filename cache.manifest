@@ -2,26 +2,23 @@ CACHE MANIFEST
 
 
 CACHE:
-audio/02-jura.mp3
-audio/0_bnw_fuer_trailer_obama_ubahn_u_wegs_120614.mp3
-audio/1_bnw_ort_1_oberholz_zweiter_versuch_text_u_sype_120614.mp3
-audio/2_bnw_remy_v_matt_haus_ort_2_mit_klavier_120614.mp3
-audio/3_bnw_unterwegs_sounds_1_120614.mp3
-audio/4_bnw_ort_3_leihamt_animal_sounds_yt_120614.mp3
-audio/5_bnw_zwischen_ort_4_u_5_fuge_klavier_130614.mp3
-audio/6_bnw_3_mal_10_sec_fuer_besetztes_haus_linienstrasse_206_130614.mp3
-audio/7_bnw_ort_5_garnisonsfriedhof_drucker_sound_stories_white_noises_130614.mp3
-audio/8_bnw_arbeitsnachweis_ein_ton_130614.mp3
+index.html
+audio/1.mp3
+audio/2.mp3
+audio/3.mp3
+audio/4.mp3
+audio/5.mp3
+audio/6.mp3
+audio/A.mp3
+audio/B.mp3
+audio/C.mp3
+audio/D.mp3
+audio/E.mp3
 audio/arbeiterdenkmal.mp3
 audio/arbeitsnachweis.mp3
-audio/besetztes_haus.mp3
-audio/garnisonsfriedhof.mp3
-audio/haus_aus_einem_anderen_land.mp3
 audio/karl-liebknecht-haus.mp3
 audio/leerstehendes_haus.mp3
-audio/leihamt.mp3
 audio/soho-house.mp3
-audio/st.oberholz.mp3
 audio/volksbuehne.mp3
 audio/wunschgarten_flitterzaun.mp3
 fonts/glyphicons-halflings-regular.eot
@@ -61,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: c188dd47aa0866481e65140789d16793a0f7e2f2e2367e899e7cbfe8d824917c
+# hash: 89d6c7d6479276bf71d3da77066fa059adaf642a1d733ce553cd3f01551faad8

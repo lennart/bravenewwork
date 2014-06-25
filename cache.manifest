@@ -2,6 +2,7 @@ CACHE MANIFEST
 
 
 CACHE:
+index.html
 audio/1.mp3
 audio/2.mp3
 audio/3.mp3
@@ -57,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: f55e8778351e5afb67384e2f881470655b2037741008b41acb338cbdbef525bc
+# hash: 1d611796a132e60767e12d3b3d1d32415015e21bfada1a4434df2e5a77210834

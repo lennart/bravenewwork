@@ -2,7 +2,6 @@ CACHE MANIFEST
 
 
 CACHE:
-index.html
 audio/1.mp3
 audio/2.mp3
 audio/3.mp3
@@ -30,14 +29,14 @@ scripts/components.min.js
 scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
-fonts/bootstrap/glyphicons-halflings-regular.eot
-fonts/bootstrap/glyphicons-halflings-regular.svg
-fonts/bootstrap/glyphicons-halflings-regular.ttf
-fonts/bootstrap/glyphicons-halflings-regular.woff
 fonts/font-awesome/fontawesome-webfont.eot
 fonts/font-awesome/fontawesome-webfont.svg
 fonts/font-awesome/fontawesome-webfont.ttf
 fonts/font-awesome/fontawesome-webfont.woff
+fonts/bootstrap/glyphicons-halflings-regular.eot
+fonts/bootstrap/glyphicons-halflings-regular.svg
+fonts/bootstrap/glyphicons-halflings-regular.ttf
+fonts/bootstrap/glyphicons-halflings-regular.woff
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -58,4 +57,4 @@ http://*
 https://*
 *
 
-# hash: bd49ac83812ab5ba9a4d3a7e7a247882aa6f81b35d75d27012d17482088cc7a7
+# hash: 5ab2238553e158dcedd83848c44097d914ec0aed1ee20285a4064c94f7633691

@@ -2,7 +2,6 @@ CACHE MANIFEST
 
 
 CACHE:
-index.html
 audio/02-jura.mp3
 audio/0_bnw_fuer_trailer_obama_ubahn_u_wegs_120614.mp3
 audio/1_bnw_ort_1_oberholz_zweiter_versuch_text_u_sype_120614.mp3
@@ -62,4 +61,4 @@ http://*
 https://*
 *
 
-# hash: ae4359d1a0402fb1446bb2b2fea007ebc0f968191348a1bf03a357f7b5a23b48
+# hash: 0aa68ada1a80eba5887b17aec4a62793e5aaa895b692cfdd1ddbd180d60e93cb

@@ -2,6 +2,7 @@ CACHE MANIFEST
 
 
 CACHE:
+index.html
 audio/02-jura.mp3
 audio/0_bnw_fuer_trailer_obama_ubahn_u_wegs_120614.mp3
 audio/1_bnw_ort_1_oberholz_zweiter_versuch_text_u_sype_120614.mp3
@@ -28,19 +29,6 @@ fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
 fonts/glyphicons-halflings-regular.woff
-images/arbeiterdenkmal.jpg
-images/arbeitsnachweis.jpg
-images/besetztes_haus.jpg
-images/flitterzaun.jpg
-images/garnisonsfriedhof.jpg
-images/haus_aus_einem_anderen_land.jpg
-images/karl-liebknecht-haus.jpg
-images/leerstehendes_haus.jpg
-images/leihamt.jpg
-images/soho.jpg
-images/stoberholz.jpg
-images/volksbuehne.jpg
-images/wunschgarten.jpg
 scripts/app.min.js
 scripts/components.min.js
 scripts/views.tpl.min.js
@@ -54,6 +42,19 @@ fonts/font-awesome/fontawesome-webfont.eot
 fonts/font-awesome/fontawesome-webfont.svg
 fonts/font-awesome/fontawesome-webfont.ttf
 fonts/font-awesome/fontawesome-webfont.woff
+images/places/arbeiterdenkmal.jpg
+images/places/arbeitsnachweis.jpg
+images/places/besetztes_haus.jpg
+images/places/flitterzaun.jpg
+images/places/garnisonsfriedhof.jpg
+images/places/haus_aus_einem_anderen_land.jpg
+images/places/karl-liebknecht-haus.jpg
+images/places/leerstehendes_haus.jpg
+images/places/leihamt.jpg
+images/places/soho.jpg
+images/places/stoberholz.jpg
+images/places/volksbuehne.jpg
+images/places/wunschgarten.jpg
 
 
 NETWORK:
@@ -61,4 +62,4 @@ http://*
 https://*
 *
 
-# hash: 52348fb61e82ddc61000877cba9fc7d0ab05dae44dfbf89a602e203b7542e13b
+# hash: ae4359d1a0402fb1446bb2b2fea007ebc0f968191348a1bf03a357f7b5a23b48

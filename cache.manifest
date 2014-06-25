@@ -3,15 +3,6 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-scripts/app.min.js
-scripts/components.min.js
-scripts/views.tpl.min.js
-styles/components.min.css
-styles/main.min.css
-fonts/glyphicons-halflings-regular.eot
-fonts/glyphicons-halflings-regular.svg
-fonts/glyphicons-halflings-regular.ttf
-fonts/glyphicons-halflings-regular.woff
 audio/1.mp3
 audio/2.mp3
 audio/3.mp3
@@ -30,6 +21,15 @@ audio/leerstehendes_haus.mp3
 audio/soho-house.mp3
 audio/volksbuehne.mp3
 audio/wunschgarten_flitterzaun.mp3
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+scripts/app.min.js
+scripts/components.min.js
+scripts/views.tpl.min.js
+styles/components.min.css
+styles/main.min.css
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
@@ -58,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: d5e6e8715dbd7c14541d634c1012e9a7bc3f3c4f14b18406673644084d1a0d95
+# hash: bd49ac83812ab5ba9a4d3a7e7a247882aa6f81b35d75d27012d17482088cc7a7

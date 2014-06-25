@@ -28,19 +28,19 @@ fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
 fonts/glyphicons-halflings-regular.woff
-images/Arbeiterdenkmal.jpg
-images/Arbeitsnachweis.jpg
-images/Besetztes_Haus.jpg
-images/Flitterzaun.jpg
-images/Garnisonsfriedhof.jpg
-images/Haus_aus_einem_anderen_Land.jpg
-images/Karl-Liebknecht-Haus.jpg
-images/Leerstehendes_Haus.jpg
-images/Leihamt.jpg
-images/Soho.jpg
-images/StOberholz.jpg
-images/Volksbuehne.jpg
-images/Wunschgarten.jpg
+images/arbeiterdenkmal.jpg
+images/arbeitsnachweis.jpg
+images/besetztes_haus.jpg
+images/flitterzaun.jpg
+images/garnisonsfriedhof.jpg
+images/haus_aus_einem_anderen_land.jpg
+images/karl-liebknecht-haus.jpg
+images/leerstehendes_haus.jpg
+images/leihamt.jpg
+images/soho.jpg
+images/stoberholz.jpg
+images/volksbuehne.jpg
+images/wunschgarten.jpg
 scripts/app.min.js
 scripts/components.min.js
 scripts/views.tpl.min.js
@@ -61,4 +61,4 @@ http://*
 https://*
 *
 
-# hash: 288874a72d34d88ed88617a1fcba8eabb7620eef348bf50aeff8c583cec12f2e
+# hash: 52348fb61e82ddc61000877cba9fc7d0ab05dae44dfbf89a602e203b7542e13b

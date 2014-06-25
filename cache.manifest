@@ -2,7 +2,6 @@ CACHE MANIFEST
 
 
 CACHE:
-app.manifest
 audio/02-jura.mp3
 audio/0_bnw_fuer_trailer_obama_ubahn_u_wegs_120614.mp3
 audio/1_bnw_ort_1_oberholz_zweiter_versuch_text_u_sype_120614.mp3
@@ -41,6 +40,8 @@ images/Wunschgarten.jpg
 scripts/app.min.js
 scripts/components.min.js
 scripts/views.tpl.min.js
+styles/components.min.css
+styles/main.min.css
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
@@ -56,4 +57,4 @@ http://*
 https://*
 *
 
-# hash: bc92dc7a09540baa015fa39923c5c87f1ff9c38ac9d9f2e128fcfd81b1594d90
+# hash: 5062ca78ad8903a4ad0e91e004febb7b8acab288391af345e10d023ff6c768b7

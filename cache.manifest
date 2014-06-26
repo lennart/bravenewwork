@@ -30,14 +30,6 @@ audio/way/b.mp3
 audio/way/c.mp3
 audio/way/d.mp3
 audio/way/e.mp3
-fonts/bootstrap/glyphicons-halflings-regular.eot
-fonts/bootstrap/glyphicons-halflings-regular.svg
-fonts/bootstrap/glyphicons-halflings-regular.ttf
-fonts/bootstrap/glyphicons-halflings-regular.woff
-fonts/font-awesome/fontawesome-webfont.eot
-fonts/font-awesome/fontawesome-webfont.svg
-fonts/font-awesome/fontawesome-webfont.ttf
-fonts/font-awesome/fontawesome-webfont.woff
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -51,6 +43,14 @@ images/places/soho.jpg
 images/places/stoberholz.jpg
 images/places/volksbuehne.jpg
 images/places/wunschgarten.jpg
+fonts/bootstrap/glyphicons-halflings-regular.eot
+fonts/bootstrap/glyphicons-halflings-regular.svg
+fonts/bootstrap/glyphicons-halflings-regular.ttf
+fonts/bootstrap/glyphicons-halflings-regular.woff
+fonts/font-awesome/fontawesome-webfont.eot
+fonts/font-awesome/fontawesome-webfont.svg
+fonts/font-awesome/fontawesome-webfont.ttf
+fonts/font-awesome/fontawesome-webfont.woff
 
 
 NETWORK:
@@ -58,4 +58,4 @@ http://*
 https://*
 *
 
-# hash: b984b47f6ea0961aea8586549e8e43ce3fc9ad201d8e06365ef354ad569e0e34
+# hash: d6b8b2aeedceca61b1ce712529fd547f2cf2f90faca88398cec5b9a2ded70275

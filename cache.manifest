@@ -4,18 +4,17 @@ CACHE MANIFEST
 CACHE:
 index.html
 audio/1.mp3
+audio/10.mp3
+audio/11.mp3
+audio/12.mp3
+audio/13.mp3
 audio/2.mp3
 audio/3.mp3
 audio/4.mp3
 audio/5.mp3
 audio/6.mp3
-audio/arbeiterdenkmal.mp3
-audio/arbeitsnachweis.mp3
-audio/karl-liebknecht-haus.mp3
-audio/leerstehendes_haus.mp3
-audio/soho-house.mp3
-audio/volksbuehne.mp3
-audio/wunschgarten_flitterzaun.mp3
+audio/7.mp3
+audio/8H9.mp3
 fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf
@@ -30,6 +29,13 @@ audio/way/b.mp3
 audio/way/c.mp3
 audio/way/d.mp3
 audio/way/e.mp3
+audio/way/f.mp3
+audio/way/g.mp3
+audio/way/i.mp3
+audio/way/k.mp3
+audio/way/l.mp3
+audio/way/m.mp3
+audio/way/n.mp3
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
@@ -59,4 +65,4 @@ http://*
 https://*
 *
 
-# hash: ac411990b7276c9480604e7f7acb9429bfdef1fb45f8b9a131427aaeca9f7cf0
+# hash: 61700b816c2af0c023e8847948c88410c62551dd3071ac1bdfce574afc1346e2

@@ -58,6 +58,16 @@ images/places/stoberholz.jpg
 images/places/volksbuehne.jpg
 images/places/wunschgarten.jpg
 images/routes/1.png
+images/routes/10.png
+images/routes/11.png
+images/routes/2.png
+images/routes/3.png
+images/routes/4.png
+images/routes/5.png
+images/routes/6.png
+images/routes/7.png
+images/routes/8.png
+images/routes/9.png
 
 
 NETWORK:
@@ -65,4 +75,4 @@ http://*
 https://*
 *
 
-# hash: c609618c52c6f8835e3ab00012c0ceb8cefb0e4dadf5fcc553603856c9a4ae28
+# hash: c8732b94fc36657bebb71a0d9ed434a17cc0ed36ed030bb72d9b2f2f17168214

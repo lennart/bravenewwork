@@ -3,10 +3,6 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-fonts/glyphicons-halflings-regular.eot
-fonts/glyphicons-halflings-regular.svg
-fonts/glyphicons-halflings-regular.ttf
-fonts/glyphicons-halflings-regular.woff
 audio/1.mp3
 audio/10.mp3
 audio/11.mp3
@@ -19,19 +15,15 @@ audio/5.mp3
 audio/6.mp3
 audio/7.mp3
 audio/8-h-9.mp3
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
 scripts/app.min.js
 scripts/components.min.js
 scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
-fonts/bootstrap/glyphicons-halflings-regular.eot
-fonts/bootstrap/glyphicons-halflings-regular.svg
-fonts/bootstrap/glyphicons-halflings-regular.ttf
-fonts/bootstrap/glyphicons-halflings-regular.woff
-fonts/font-awesome/fontawesome-webfont.eot
-fonts/font-awesome/fontawesome-webfont.svg
-fonts/font-awesome/fontawesome-webfont.ttf
-fonts/font-awesome/fontawesome-webfont.woff
 audio/way/a.mp3
 audio/way/b.mp3
 audio/way/c.mp3
@@ -44,6 +36,14 @@ audio/way/k.mp3
 audio/way/l.mp3
 audio/way/m.mp3
 audio/way/n.mp3
+fonts/bootstrap/glyphicons-halflings-regular.eot
+fonts/bootstrap/glyphicons-halflings-regular.svg
+fonts/bootstrap/glyphicons-halflings-regular.ttf
+fonts/bootstrap/glyphicons-halflings-regular.woff
+fonts/font-awesome/fontawesome-webfont.eot
+fonts/font-awesome/fontawesome-webfont.svg
+fonts/font-awesome/fontawesome-webfont.ttf
+fonts/font-awesome/fontawesome-webfont.woff
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -75,4 +75,4 @@ http://*
 https://*
 *
 
-# hash: b8609b477d69146f36462cfc2d2fdf3d27a1a750bad3a539c6d1bce6f26d1109
+# hash: e26d0ef9ee0aeeae84c63cb03ebdcb93c0950b92fcdcb8c78079104a7cbb3e42

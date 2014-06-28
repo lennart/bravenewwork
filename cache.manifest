@@ -44,6 +44,17 @@ fonts/font-awesome/fontawesome-webfont.eot
 fonts/font-awesome/fontawesome-webfont.svg
 fonts/font-awesome/fontawesome-webfont.ttf
 fonts/font-awesome/fontawesome-webfont.woff
+images/routes/1.png
+images/routes/10.png
+images/routes/11.png
+images/routes/2.png
+images/routes/3.png
+images/routes/4.png
+images/routes/5.png
+images/routes/6.png
+images/routes/7.png
+images/routes/8.png
+images/routes/9.png
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -57,17 +68,6 @@ images/places/soho.jpg
 images/places/stoberholz.jpg
 images/places/volksbuehne.jpg
 images/places/wunschgarten.jpg
-images/routes/1.png
-images/routes/10.png
-images/routes/11.png
-images/routes/2.png
-images/routes/3.png
-images/routes/4.png
-images/routes/5.png
-images/routes/6.png
-images/routes/7.png
-images/routes/8.png
-images/routes/9.png
 
 
 NETWORK:
@@ -75,4 +75,4 @@ http://*
 https://*
 *
 
-# hash: feda35dd259adff171e67b41c020fbd277fdf63d1086dac1e3165c2a3a3ae4a2
+# hash: 1f9989f4b693b4f66baa56fd30cfc218e685ba0979350d1ccaca912300574c55

@@ -1,0 +1,40 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T22:19:51.714Z</time>
+    </metadata>
+    <wpt lon="13.400003" lat="52.531072">
+        <name>Haus aus einem anderen Land</name>
+        <desc>Haus aus einem anderen Land</desc>
+    </wpt>
+    <wpt lon="13.396323" lat="52.528449">
+        <name>Königliches Leihamt</name>
+    </wpt>
+    <trk>
+        <name>rm-la</name>
+        <desc>Remy v. Matt Haus - Leihamt</desc>
+        <trkseg>
+            <trkpt lon="13.400029" lat="52.531062">
+                <ele>40.125393</ele>
+                <time>2014-06-25T22:18:51Z</time>
+            </trkpt>
+            <trkpt lon="13.401262" lat="52.529516">
+                <ele>42.188442</ele>
+                <time>2014-06-25T22:24:54Z</time>
+            </trkpt>
+            <trkpt lon="13.397531" lat="52.529331">
+                <ele>39.889797</ele>
+                <time>2014-06-25T22:28:05Z</time>
+            </trkpt>
+            <trkpt lon="13.397557" lat="52.528797">
+                <ele>41.334377</ele>
+                <time>2014-06-25T22:29:03Z</time>
+            </trkpt>
+            <trkpt lon="13.396341" lat="52.528451">
+                <ele>38.634121</ele>
+                <time>2014-06-25T22:30:22Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

@@ -1,0 +1,38 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T19:30:42.859Z</time>
+    </metadata>
+    <wpt lon="13.396205" lat="52.528616">
+        <name>Königliches Leihamt</name>
+    </wpt>
+    <wpt lon="13.398539" lat="52.528907">
+        <name>Leerstehendes Haus</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.396209" lat="52.528615">
+                <ele>37.901450</ele>
+                <time>2014-06-25T22:29:00Z</time>
+            </trkpt>
+            <trkpt lon="13.396314" lat="52.528442">
+                <ele>38.634121</ele>
+                <time>2014-06-25T22:30:22Z</time>
+            </trkpt>
+            <trkpt lon="13.397883" lat="52.528867">
+                <ele>39.366792</ele>
+                <time>2014-06-25T22:31:43Z</time>
+            </trkpt>
+            <trkpt lon="13.398192" lat="52.528896">
+                <ele>39.589556</ele>
+                <time>2014-06-25T22:32:08Z</time>
+            </trkpt>
+            <trkpt lon="13.398552" lat="52.528908">
+                <ele>39.839382</ele>
+                <time>2014-06-25T22:32:36Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

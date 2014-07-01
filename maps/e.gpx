@@ -1,0 +1,34 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T19:24:27.493Z</time>
+    </metadata>
+    <wpt lon="13.402914" lat="52.529025">
+        <name>Besetztes Haus</name>
+    </wpt>
+    <wpt lon="13.403531" lat="52.528198">
+        <name>Garnisonsfriedhof</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.402912" lat="52.529024">
+                <ele>41.815909</ele>
+                <time>2014-06-25T22:38:23Z</time>
+            </trkpt>
+            <trkpt lon="13.403152" lat="52.529023">
+                <ele>41.719640</ele>
+                <time>2014-06-25T22:38:28Z</time>
+            </trkpt>
+            <trkpt lon="13.403262" lat="52.528194">
+                <ele>40.763210</ele>
+                <time>2014-06-25T22:39:27Z</time>
+            </trkpt>
+            <trkpt lon="13.403536" lat="52.528199">
+                <ele>39.806780</ele>
+                <time>2014-06-25T22:40:25Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

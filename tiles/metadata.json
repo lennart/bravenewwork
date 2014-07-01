@@ -1,0 +1,11 @@
+{
+    "attribution": "Data \u00a9 OpenStreetMap (and) contributors, CC-BY-SA", 
+    "description": "", 
+    "bounds": "13.3957,52.5252,13.4159,52.5313", 
+    "name": "Brave New Work - Berlin", 
+    "minzoom": "16", 
+    "version": "1.0.0", 
+    "template": "", 
+    "maxzoom": "18", 
+    "center": "13.4014,52.5296,17"
+}

@@ -1,0 +1,30 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T22:51:34.842Z</time>
+    </metadata>
+    <wpt lon="13.412871" lat="52.526632">
+        <name>Karl-Liebknecht Haus</name>
+    </wpt>
+    <wpt lon="13.415112" lat="52.526973">
+        <name>Soho House</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.412871" lat="52.526632">
+                <ele>38.181423</ele>
+                <time>2014-06-25T23:00:02Z</time>
+            </trkpt>
+            <trkpt lon="13.414742" lat="52.527199">
+                <ele>39.828091</ele>
+                <time>2014-06-25T23:01:37Z</time>
+            </trkpt>
+            <trkpt lon="13.415121" lat="52.526970">
+                <ele>40.094204</ele>
+                <time>2014-06-25T23:02:28Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

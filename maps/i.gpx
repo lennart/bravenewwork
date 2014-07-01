@@ -1,0 +1,42 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-30T08:16:30.907Z</time>
+    </metadata>
+    <wpt lon="13.407275" lat="52.527066">
+        <name>Flitterzaun</name>
+    </wpt>
+    <wpt lon="13.410995" lat="52.525938">
+        <name>Volksbühne</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.407271" lat="52.527068">
+                <ele>40.493972</ele>
+                <time>2014-06-25T22:50:32Z</time>
+            </trkpt>
+            <trkpt lon="13.408075" lat="52.526940">
+                <ele>39.097679</ele>
+                <time>2014-06-25T22:50:43Z</time>
+            </trkpt>
+            <trkpt lon="13.408145" lat="52.527039">
+                <ele>38.783974</ele>
+                <time>2014-06-25T22:50:45Z</time>
+            </trkpt>
+            <trkpt lon="13.409828" lat="52.526568">
+                <ele>36.548672</ele>
+                <time>2014-06-25T22:51:03Z</time>
+            </trkpt>
+            <trkpt lon="13.409776" lat="52.526348">
+                <ele>34.457363</ele>
+                <time>2014-06-25T22:51:19Z</time>
+            </trkpt>
+            <trkpt lon="13.411009" lat="52.525933">
+                <ele>36.447881</ele>
+                <time>2014-06-25T22:52:41Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

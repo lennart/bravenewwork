@@ -1,0 +1,37 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T19:35:17.395Z</time>
+    </metadata>
+    <wpt lon="13.401741" lat="52.529570">
+        <name>St. Oberholz</name>
+        <desc>St. Oberholz</desc>
+    </wpt>
+    <wpt lon="13.400003" lat="52.531072">
+        <name>Haus aus einem anderen Land</name>
+        <desc>Haus aus einem anderen Land</desc>
+    </wpt>
+    <trk>
+        <name>so-rm</name>
+        <desc>St. Oberholz - Remy v. Matt Haus</desc>
+        <trkseg>
+            <trkpt lon="13.401738" lat="52.529580">
+                <ele>39.918394</ele>
+                <time>2014-06-25T22:14:23Z</time>
+            </trkpt>
+            <trkpt lon="13.401609" lat="52.529846">
+                <ele>38.740202</ele>
+                <time>2014-06-25T22:15:27Z</time>
+            </trkpt>
+            <trkpt lon="13.401049" lat="52.529797">
+                <ele>38.678434</ele>
+                <time>2014-06-25T22:15:50Z</time>
+            </trkpt>
+            <trkpt lon="13.400009" lat="52.531064">
+                <ele>40.125393</ele>
+                <time>2014-06-25T22:18:51Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

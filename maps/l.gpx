@@ -1,0 +1,38 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T22:33:28.575Z</time>
+    </metadata>
+    <wpt lon="13.413396" lat="52.525463">
+        <name>Arbeiterdenkmal</name>
+    </wpt>
+    <wpt lon="13.412879" lat="52.526654">
+        <name>Karl-Liebknecht Haus</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.413405" lat="52.525467">
+                <ele>38.773525</ele>
+                <time>2014-06-25T22:54:59Z</time>
+            </trkpt>
+            <trkpt lon="13.414883" lat="52.526649">
+                <ele>40.225944</ele>
+                <time>2014-06-25T22:57:33Z</time>
+            </trkpt>
+            <trkpt lon="13.413920" lat="52.526938">
+                <ele>40.861080</ele>
+                <time>2014-06-25T22:58:41Z</time>
+            </trkpt>
+            <trkpt lon="13.413916" lat="52.526935">
+                <ele>40.864468</ele>
+                <time>2014-06-25T22:58:42Z</time>
+            </trkpt>
+            <trkpt lon="13.412889" lat="52.526657">
+                <ele>38.761253</ele>
+                <time>2014-06-25T22:59:44Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

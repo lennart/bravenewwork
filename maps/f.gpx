@@ -1,0 +1,38 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T19:28:00.455Z</time>
+    </metadata>
+    <wpt lon="13.403547" lat="52.528199">
+        <name>Garnisonsfriedhof</name>
+    </wpt>
+    <wpt lon="13.404845" lat="52.528024">
+        <name>Centraler Arbeitsnachweis</name>
+    </wpt>
+    <trk>
+        <name>Route</name>
+        <trkseg>
+            <trkpt lon="13.403551" lat="52.528201">
+                <ele>39.447239</ele>
+                <time>2014-06-25T22:37:40Z</time>
+            </trkpt>
+            <trkpt lon="13.403289" lat="52.528197">
+                <ele>40.294765</ele>
+                <time>2014-06-25T22:39:42Z</time>
+            </trkpt>
+            <trkpt lon="13.403335" lat="52.527845">
+                <ele>41.272915</ele>
+                <time>2014-06-25T22:42:02Z</time>
+            </trkpt>
+            <trkpt lon="13.404636" lat="52.527595">
+                <ele>40.595730</ele>
+                <time>2014-06-25T22:43:16Z</time>
+            </trkpt>
+            <trkpt lon="13.404847" lat="52.528031">
+                <ele>40.655972</ele>
+                <time>2014-06-25T22:44:18Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

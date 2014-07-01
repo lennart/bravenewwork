@@ -1,0 +1,26 @@
+
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+        <name>Untitled Document</name>
+        <time>2014-06-27T19:32:07.986Z</time>
+    </metadata>
+    <wpt lon="13.398573" lat="52.528931">
+        <name>Leerstehendes Haus</name>
+    </wpt>
+    <wpt lon="13.402967" lat="52.529032">
+        <name>Besetztes Haus</name>
+    </wpt>
+    <trk>
+        <name>Untitled Track</name>
+        <trkseg>
+            <trkpt lon="13.398577" lat="52.528935">
+                <ele>39.839382</ele>
+                <time>2014-06-25T22:32:36Z</time>
+            </trkpt>
+            <trkpt lon="13.402933" lat="52.529031">
+                <ele>41.346035</ele>
+                <time>2014-06-25T22:38:15Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

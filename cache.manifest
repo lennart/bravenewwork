@@ -31,12 +31,12 @@ maps/i.gpx
 maps/k.gpx
 maps/l.gpx
 maps/m.gpx
-styles/components.min.css
-styles/main.min.css
-tiles/metadata.json
 scripts/app.min.js
 scripts/components.min.js
 scripts/views.tpl.min.js
+styles/components.min.css
+styles/main.min.css
+tiles/metadata.json
 audio/way/a.mp3
 audio/way/b.mp3
 audio/way/c.mp3
@@ -276,4 +276,4 @@ NETWORK:
 http://*
 https://*
 
-# hash: 034d166bec0ea7092b13a9323b4e62822d3cd3040db3e5e26771518d3c2ae176
+# hash: eb9d0ea284d67fe8a2f5dccf2971fb048688ddd2234a3e84fab135c183a0c633

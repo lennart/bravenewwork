@@ -3,6 +3,11 @@ CACHE MANIFEST
 
 CACHE:
 index.html
+audio/1.mp3
+audio/2.mp3
+audio/3.mp3
+audio/4.mp3
+audio/5.mp3
 fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
 fonts/glyphicons-halflings-regular.ttf

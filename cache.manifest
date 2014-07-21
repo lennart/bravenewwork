@@ -4,14 +4,17 @@ CACHE MANIFEST
 CACHE:
 index.html
 audio/1.mp3
+audio/10.mp3
+audio/11.mp3
+audio/12.mp3
+audio/13.mp3
 audio/2.mp3
 audio/3.mp3
 audio/4.mp3
 audio/5.mp3
-fonts/glyphicons-halflings-regular.eot
-fonts/glyphicons-halflings-regular.svg
-fonts/glyphicons-halflings-regular.ttf
-fonts/glyphicons-halflings-regular.woff
+audio/6.mp3
+audio/7.mp3
+audio/8-h-9.mp3
 maps/a.gpx
 maps/b.gpx
 maps/bnw.gpx
@@ -30,14 +33,22 @@ scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
 tiles/metadata.json
+audio/way/a.mp3
+audio/way/b.mp3
+audio/way/c.mp3
+audio/way/d.mp3
+audio/way/e.mp3
+audio/way/f.mp3
+audio/way/g.mp3
+audio/way/i.mp3
+audio/way/k.mp3
+audio/way/l.mp3
+audio/way/m.mp3
+audio/way/n.mp3
 fonts/bootstrap/glyphicons-halflings-regular.eot
 fonts/bootstrap/glyphicons-halflings-regular.svg
 fonts/bootstrap/glyphicons-halflings-regular.ttf
 fonts/bootstrap/glyphicons-halflings-regular.woff
-fonts/font-awesome/fontawesome-webfont.eot
-fonts/font-awesome/fontawesome-webfont.svg
-fonts/font-awesome/fontawesome-webfont.ttf
-fonts/font-awesome/fontawesome-webfont.woff
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -257,4 +268,4 @@ NETWORK:
 http://*
 https://*
 
-# hash: af850b80cfb069709752e925a4ea4fc4ba596cc52c0559d5275b8bf60038f9b5
+# hash: 5721fc01f8c1d04be4ec40b760d0ebaf621ea367e0ebff69309bd28832ee28f5

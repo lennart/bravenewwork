@@ -3,10 +3,12 @@ CACHE MANIFEST
 
 CACHE:
 index.html
+audio/1.mp3
 audio/10.mp3
 audio/11.mp3
 audio/12.mp3
 audio/13.mp3
+audio/2.mp3
 audio/3.mp3
 audio/4.mp3
 audio/5.mp3
@@ -266,4 +268,4 @@ NETWORK:
 http://*
 https://*
 
-# hash: 5721fc01f8c1d04be4ec40b760d0ebaf621ea367e0ebff69309bd28832ee28f5
+# hash: bcbc49413fa62ca5722dfdcb621151b908ec20545c9849ad1f849a0650ec1597

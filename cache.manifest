@@ -33,10 +33,6 @@ scripts/views.tpl.min.js
 styles/components.min.css
 styles/main.min.css
 tiles/metadata.json
-fonts/bootstrap/glyphicons-halflings-regular.eot
-fonts/bootstrap/glyphicons-halflings-regular.svg
-fonts/bootstrap/glyphicons-halflings-regular.ttf
-fonts/bootstrap/glyphicons-halflings-regular.woff
 audio/way/a.mp3
 audio/way/b.mp3
 audio/way/c.mp3
@@ -49,6 +45,10 @@ audio/way/k.mp3
 audio/way/l.mp3
 audio/way/m.mp3
 audio/way/n.mp3
+fonts/bootstrap/glyphicons-halflings-regular.eot
+fonts/bootstrap/glyphicons-halflings-regular.svg
+fonts/bootstrap/glyphicons-halflings-regular.ttf
+fonts/bootstrap/glyphicons-halflings-regular.woff
 images/places/arbeiterdenkmal.jpg
 images/places/arbeitsnachweis.jpg
 images/places/besetztes_haus.jpg
@@ -74,14 +74,14 @@ tiles/16/35208/21491.png
 tiles/16/35209/21489.png
 tiles/16/35209/21490.png
 tiles/16/35209/21491.png
+tiles/16/35210/21489.png
+tiles/16/35210/21490.png
+tiles/16/35210/21491.png
 tiles/17/70413/42978.png
 tiles/17/70413/42979.png
 tiles/17/70413/42980.png
 tiles/17/70413/42981.png
 tiles/17/70413/42982.png
-tiles/16/35210/21489.png
-tiles/16/35210/21490.png
-tiles/16/35210/21491.png
 tiles/17/70414/42978.png
 tiles/17/70414/42979.png
 tiles/17/70414/42980.png
@@ -207,6 +207,15 @@ tiles/18/140835/85962.png
 tiles/18/140835/85963.png
 tiles/18/140835/85964.png
 tiles/18/140835/85965.png
+tiles/18/140836/85957.png
+tiles/18/140836/85958.png
+tiles/18/140836/85959.png
+tiles/18/140836/85960.png
+tiles/18/140836/85961.png
+tiles/18/140836/85962.png
+tiles/18/140836/85963.png
+tiles/18/140836/85964.png
+tiles/18/140836/85965.png
 tiles/18/140837/85957.png
 tiles/18/140837/85958.png
 tiles/18/140837/85959.png
@@ -225,15 +234,6 @@ tiles/18/140838/85962.png
 tiles/18/140838/85963.png
 tiles/18/140838/85964.png
 tiles/18/140838/85965.png
-tiles/18/140836/85957.png
-tiles/18/140836/85958.png
-tiles/18/140836/85959.png
-tiles/18/140836/85960.png
-tiles/18/140836/85961.png
-tiles/18/140836/85962.png
-tiles/18/140836/85963.png
-tiles/18/140836/85964.png
-tiles/18/140836/85965.png
 tiles/18/140839/85957.png
 tiles/18/140839/85958.png
 tiles/18/140839/85959.png
@@ -268,4 +268,4 @@ NETWORK:
 http://*
 https://*
 
-# hash: 2a4718a5656a04a0568eeb6a8754dde819187a624ff7f8e78535e0d6d188e159
+# hash: dda3dd001f745e77c4fa8b42d219fa38dbeefd54ee45834770d3db497d797823
